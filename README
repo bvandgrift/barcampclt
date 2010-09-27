@@ -1,0 +1,71 @@
+Introduction
+============
+
+nanoc compiles static html sites from bits, preventing both
+html reuse, and the overhead of a cms.  It's ideal for this
+application.
+
+For info: http://nanoc.stoneship.org
+
+Installation
+============
+
+Nanoc requires rsync and the following ruby gems:
+
+run: sudo gem install kramdown asdf nanoc
+
+
+Making Changes
+==============
+
+The content directory contains the base files from which the
+site is built.  These are pages which will be compiled through
+the layouts and snippets into full pages.  They contain some
+yaml front matter -- 'nav: name' indicates which nav icon
+should be highlighted.  These variables can be expanded, however
+for the moment only 'nav' is used.
+
+The output directory contains the compiled site, and it the
+directory that's synced by rsync.
+
+The assets directory contains files which will be copied 
+into the output directory if changes have been made.  They are
+not compiled.
+
+The layouts directory contains main layouts and snippets to be
+included in other content files.  (navigation, header, footer, etc.)
+
+nanoc will compile filenames in the content directory (except
+index) into directories in the output directory.  
+
+content/schedule.html => output/schedule/index.html
+content/something/else.html => output/something/else/index.html
+
+After changes get made to the content files, build the site, or 
+view the site to verify them before deploying.
+
+When you get the changes you want, check them into the git repo.
+
+Viewing the Site Locally
+========================
+Visit your changes at http://localhost:3000
+
+run: nanoc auto
+OR
+run: rake view
+
+
+Building the Site
+=================
+Builds the site and copies the assets into the output directory.
+
+run: rake build
+
+
+Deploying the Site
+==================
+Builds the site and syncs to the deployed installation.
+
+run: rake deploy
+
+

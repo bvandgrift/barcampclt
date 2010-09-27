@@ -37,9 +37,13 @@ task :copy_assets do
   end 
 end
 
+task :view do
+  sh "nanoc3 auto"
+end
+
 task :sync do
   puts "Syncing site to production."
-  sh "rsync -rcv --delete --dry-run output/ barcamp@startcharlotte:website"
+  sh "rsync -rcv --delete output/ barcamp@startcharlotte:website"
 end
 
 task :compile do
@@ -47,6 +51,8 @@ task :compile do
   sh "nanoc3 co"
 end
 
-task :deploy => [:compile, :copy_assets, :sync]
+task :build => [:compile, :copy_assets]
+
+task :deploy => [:build, :sync]
 
 task :default => :deploy
