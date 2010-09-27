@@ -14,13 +14,13 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/style.css?v=1">
-    <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1"><!-- For the less-enabled mobile browsers like Opera Mini -->
+    <link rel="stylesheet" href="/css/style.css?v=1">
+    <link rel="stylesheet" media="handheld" href="/css/handheld.css?v=1"><!-- For the less-enabled mobile browsers like Opera Mini -->
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><!-- jQuery linked from Google = faster & possibly already in users cache -->
-    <script src="js/plugins.js"></script>
-    <script src="js/modernizr-1.5.min.js"></script><!-- Modernizr enables HTML5 elements & feature detects -->
-    <script src="js/script.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/modernizr-1.5.min.js"></script><!-- Modernizr enables HTML5 elements & feature detects -->
+    <script src="/js/script.js"></script>
 </head>
 
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
@@ -30,30 +30,13 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
 
     <div id="container">
-        <header id="masthead" class="clearfix">
-            <a href="/" title="BarCamp Charlotte" id="logo" class="ir">BarCamp Charlotte</a>
-        
-            <nav class="clearfix">
-                <ul>
-                    <li class="home active"><a href="/"><span></span>Home</a></li>
-                    <li class="venue"><a href="/venue"><span></span>Venue</a></li>
-                    <li class="schedule"><a href="/schedule"><span></span>Schedule</a></li>
-                    <li class="sponsor"><a href="/sponsor"><span></span>Sponsor</a></li>
-                    <li class="volunteer"><a href="/volunteer"><span></span>Volunteer</a></li>
-                    <li class="register"><a href="/register"><span></span>Register</a></li>
-                </ul>
-            </nav>
-        </header>
+
+        <%= render 'header' %>
 
         <%= yield %> 
+        
+        <%= render 'footer' %>
 
-        <footer class="clearfix">
-            <div class="inner">
-              <p>BarCamp Charlotte content is licensed under a Creative Commons Attribution 3.0 License except where otherwise noted.</p>
-              <p>Website powered by <a href="http://www.radiantcms.org" rel="external">Radiant CMS</a>. Designed and developed by <a href="http://bermonpainter.com" rel="external">Bermon Painter</a> and <a href="http://startcharlotte.com/" rel="external">Start Charlotte</a>.</p>
-              <a href="http://barcampcharlotte.org" class="logo hidden">BarCamp Charlotte</a>
-            </div>
-        </footer>
     </div><!-- END #container -->
 
     <!--[if lt IE 7 ]>
