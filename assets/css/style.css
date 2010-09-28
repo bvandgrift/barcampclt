@@ -1135,15 +1135,15 @@ TWITTER
 }
 
 /*------------------------------------------------------------------
-SPONSORS
+SCHEDULE
 ------------------------------------------------------------------*/
 /* line 243, ../src/style.scss */
-#sponsors {
+#schedule {
   margin: 0 auto;
-  width: 940px;
+  width: 840px;
 }
 /* line 245, ../src/style.scss */
-#sponsors h2 {
+#schedule h2 {
   clear: both;
   font-size: 260%;
   margin-bottom: 1px;
@@ -1151,12 +1151,12 @@ SPONSORS
   text-transform: uppercase;
 }
 /* line 246, ../src/style.scss */
-#sponsors ul {
+#schedule ul {
   list-style: none;
   margin: 0 0 12px;
 }
 /* line 247, ../src/style.scss */
-#sponsors li {
+#schedule li {
   background-color: #7d5a36;
   background-color: rgba(87, 63, 38, 0.3);
   border: 4px solid #6f4e2a;
@@ -1166,11 +1166,11 @@ SPONSORS
   width: 212px;
 }
 /* line 248, ../src/style.scss */
-#sponsors li:nth-child(4n) {
+#schedule li:nth-child(4n) {
   margin-right: 0px;
 }
 /* line 249, ../src/style.scss */
-#sponsors img {
+#schedule img {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -1188,7 +1188,7 @@ SPONSORS
   transition-timing-function: ease-in;
 }
 /* line 250, ../src/style.scss */
-#sponsors a:hover img {
+#schedule a:hover img {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -1206,6 +1206,172 @@ SPONSORS
   transition-timing-function: ease-in;
 }
 /* line 251, ../src/style.scss */
+#schedule p {
+  font-size: 100%;
+  line-height: 200%;
+  margin-bottom: 17px;
+}
+/* line 252, ../src/style.scss */
+#schedule span {
+  font-size: 160%;
+  font-style: italics;
+}
+
+/*------------------------------------------------------------------
+Volunteers
+------------------------------------------------------------------*/
+/* line 258, ../src/style.scss */
+#volunteers {
+  margin: 0 auto;
+  width: 940px;
+}
+/* line 260, ../src/style.scss */
+#volunteers h2 {
+  clear: both;
+  font-size: 260%;
+  margin-bottom: 1px;
+  text-shadow: 1px 1px 0px #72512d;
+  text-transform: uppercase;
+}
+/* line 261, ../src/style.scss */
+#volunteers h3 {
+  font-size: 200%;
+  margin-top: 16px;
+}
+/* line 262, ../src/style.scss */
+#volunteers ul {
+  list-style: none;
+  margin: 0 0 12px 10px;
+}
+/* line 263, ../src/style.scss */
+#volunteers li {
+  background-color: #7d5a36;
+  background-color: rgba(87, 63, 38, 0.3);
+  border: 2px solid #6f4e2a;
+  border-color: rgba(52, 34, 15, 0.3);
+  margin-bottom: 16px;
+  width: 375px;
+  padding: 5px;
+}
+/* line 264, ../src/style.scss */
+#volunteers li:nth-child(4n) {
+  margin-right: 0px;
+}
+/* line 265, ../src/style.scss */
+#volunteers img {
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 266, ../src/style.scss */
+#volunteers a:hover img {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 267, ../src/style.scss */
+#volunteers p {
+  font-size: 100%;
+  line-height: 200%;
+  margin-bottom: 17px;
+}
+
+/*------------------------------------------------------------------
+SPONSORS
+------------------------------------------------------------------*/
+/* line 272, ../src/style.scss */
+#sponsors {
+  margin: 0 auto;
+  width: 940px;
+}
+/* line 274, ../src/style.scss */
+#sponsors h2 {
+  clear: both;
+  font-size: 260%;
+  margin-bottom: 1px;
+  text-shadow: 1px 1px 0px #72512d;
+  text-transform: uppercase;
+}
+/* line 275, ../src/style.scss */
+#sponsors ul {
+  list-style: none;
+  margin: 0 0 12px 10px;
+}
+/* line 276, ../src/style.scss */
+#sponsors li {
+  background-color: #7d5a36;
+  background-color: rgba(87, 63, 38, 0.3);
+  border: 2px solid #6f4e2a;
+  border-color: rgba(52, 34, 15, 0.3);
+  margin-bottom: 16px;
+  width: 375px;
+  padding: 5px;
+}
+/* line 277, ../src/style.scss */
+#sponsors li:nth-child(4n) {
+  margin-right: 0px;
+}
+/* line 278, ../src/style.scss */
+#sponsors img {
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 279, ../src/style.scss */
+#sponsors a:hover img {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 280, ../src/style.scss */
 #sponsors p {
   font-size: 100%;
   line-height: 200%;
@@ -1215,12 +1381,12 @@ SPONSORS
 /*------------------------------------------------------------------
 BENEFITS
 ------------------------------------------------------------------*/
-/* line 256, ../src/style.scss */
+/* line 285, ../src/style.scss */
 #benefits {
   margin: 0 auto;
   width: 940px;
 }
-/* line 258, ../src/style.scss */
+/* line 287, ../src/style.scss */
 #benefits h2 {
   clear: both;
   font-size: 260%;
@@ -1228,17 +1394,17 @@ BENEFITS
   text-shadow: 1px 1px 0px #72512d;
   text-transform: uppercase;
 }
-/* line 259, ../src/style.scss */
+/* line 288, ../src/style.scss */
 #benefits h3 {
   font-size: 200%;
   margin-top: 16px;
 }
-/* line 260, ../src/style.scss */
+/* line 289, ../src/style.scss */
 #benefits ul {
   list-style: none;
   margin: 0 0 12px 10px;
 }
-/* line 261, ../src/style.scss */
+/* line 290, ../src/style.scss */
 #benefits li {
   background-color: #7d5a36;
   background-color: rgba(87, 63, 38, 0.3);
@@ -1248,11 +1414,11 @@ BENEFITS
   width: 375px;
   padding: 5px;
 }
-/* line 262, ../src/style.scss */
+/* line 291, ../src/style.scss */
 #benefits li:nth-child(4n) {
   margin-right: 0px;
 }
-/* line 263, ../src/style.scss */
+/* line 292, ../src/style.scss */
 #benefits img {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -1270,7 +1436,7 @@ BENEFITS
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 264, ../src/style.scss */
+/* line 293, ../src/style.scss */
 #benefits a:hover img {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -1288,7 +1454,7 @@ BENEFITS
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 265, ../src/style.scss */
+/* line 294, ../src/style.scss */
 #benefits p {
   font-size: 100%;
   line-height: 200%;
@@ -1298,12 +1464,12 @@ BENEFITS
 /*------------------------------------------------------------------
 SPONSOR CONTACT
 ------------------------------------------------------------------*/
-/* line 270, ../src/style.scss */
+/* line 299, ../src/style.scss */
 #sponsor-contact {
   margin: 0 auto;
   width: 940px;
 }
-/* line 272, ../src/style.scss */
+/* line 301, ../src/style.scss */
 #sponsor-contact h2 {
   clear: both;
   font-size: 260%;
@@ -1311,12 +1477,12 @@ SPONSOR CONTACT
   text-shadow: 1px 1px 0px #72512d;
   text-transform: uppercase;
 }
-/* line 273, ../src/style.scss */
+/* line 302, ../src/style.scss */
 #sponsor-contact ul {
   list-style: none;
   margin: 0 0 12px;
 }
-/* line 274, ../src/style.scss */
+/* line 303, ../src/style.scss */
 #sponsor-contact li {
   background-color: #7d5a36;
   background-color: rgba(87, 63, 38, 0.3);
@@ -1326,11 +1492,11 @@ SPONSOR CONTACT
   margin-bottom: 16px;
   width: 212px;
 }
-/* line 275, ../src/style.scss */
+/* line 304, ../src/style.scss */
 #sponsor-contact li:nth-child(4n) {
   margin-right: 0px;
 }
-/* line 276, ../src/style.scss */
+/* line 305, ../src/style.scss */
 #sponsor-contact img {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -1348,7 +1514,7 @@ SPONSOR CONTACT
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 277, ../src/style.scss */
+/* line 306, ../src/style.scss */
 #sponsor-contact a:hover img {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -1366,7 +1532,7 @@ SPONSOR CONTACT
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 278, ../src/style.scss */
+/* line 307, ../src/style.scss */
 #sponsor-contact p {
   font-size: 100%;
   line-height: 200%;
@@ -1376,7 +1542,7 @@ SPONSOR CONTACT
 /*------------------------------------------------------------------
 FOOTER
 ------------------------------------------------------------------*/
-/* line 283, ../src/style.scss */
+/* line 312, ../src/style.scss */
 footer {
   border-top: 1px dashed #f4f3de;
   border-color: rgba(244, 243, 222, 0.3);
@@ -1384,11 +1550,11 @@ footer {
   margin-top: 3px;
   padding: 32px 0;
 }
-/* line 285, ../src/style.scss */
+/* line 314, ../src/style.scss */
 footer a {
   color: #f4f3de;
 }
-/* line 286, ../src/style.scss */
+/* line 315, ../src/style.scss */
 footer .inner {
   margin: 0 auto;
   width: 940px;
@@ -1397,7 +1563,7 @@ footer .inner {
 /*------------------------------------------------------------------
 FANCYBOX
 ------------------------------------------------------------------*/
-/* line 291, ../src/style.scss */
+/* line 320, ../src/style.scss */
 #fancybox-loading {
   position: fixed;
   top: 50%;
@@ -1412,14 +1578,14 @@ FANCYBOX
   display: none;
 }
 
-/* line 292, ../src/style.scss */
+/* line 321, ../src/style.scss */
 * html #fancybox-loading {
   position: absolute;
   margin-top: 0;
 }
 
 /* IE6 */
-/* line 293, ../src/style.scss */
+/* line 322, ../src/style.scss */
 #fancybox-loading div {
   position: absolute;
   top: 0;
@@ -1429,7 +1595,7 @@ FANCYBOX
   background-image: url("../images/fancybox/fancybox.png");
 }
 
-/* line 294, ../src/style.scss */
+/* line 323, ../src/style.scss */
 #fancybox-overlay {
   position: fixed;
   top: 0;
@@ -1441,14 +1607,14 @@ FANCYBOX
   display: none;
 }
 
-/* line 295, ../src/style.scss */
+/* line 324, ../src/style.scss */
 * html #fancybox-overlay {
   position: absolute;
   width: 100%;
 }
 
 /* IE6 */
-/* line 296, ../src/style.scss */
+/* line 325, ../src/style.scss */
 #fancybox-tmp {
   padding: 0;
   margin: 0;
@@ -1457,7 +1623,7 @@ FANCYBOX
   display: none;
 }
 
-/* line 297, ../src/style.scss */
+/* line 326, ../src/style.scss */
 #fancybox-wrap {
   position: absolute;
   top: 0;
@@ -1468,7 +1634,7 @@ FANCYBOX
   display: none;
 }
 
-/* line 298, ../src/style.scss */
+/* line 327, ../src/style.scss */
 #fancybox-outer {
   position: relative;
   width: 100%;
@@ -1476,7 +1642,7 @@ FANCYBOX
   background: #FFF;
 }
 
-/* line 299, ../src/style.scss */
+/* line 328, ../src/style.scss */
 #fancybox-inner {
   position: absolute;
   top: 0;
@@ -1489,7 +1655,7 @@ FANCYBOX
   overflow: hidden;
 }
 
-/* line 300, ../src/style.scss */
+/* line 329, ../src/style.scss */
 #fancybox-hide-sel-frame {
   position: absolute;
   top: 0;
@@ -1499,7 +1665,7 @@ FANCYBOX
   background: transparent;
 }
 
-/* line 301, ../src/style.scss */
+/* line 330, ../src/style.scss */
 #fancybox-close {
   position: absolute;
   top: -15px;
@@ -1513,7 +1679,7 @@ FANCYBOX
   display: none;
 }
 
-/* line 302, ../src/style.scss */
+/* line 331, ../src/style.scss */
 #fancybox_error {
   color: #444;
   font: normal 12px/20px Arial;
@@ -1521,7 +1687,7 @@ FANCYBOX
   margin: 0;
 }
 
-/* line 303, ../src/style.scss */
+/* line 332, ../src/style.scss */
 #fancybox-content {
   height: auto;
   width: auto;
@@ -1529,7 +1695,7 @@ FANCYBOX
   margin: 0;
 }
 
-/* line 304, ../src/style.scss */
+/* line 333, ../src/style.scss */
 #fancybox-img {
   width: 100%;
   height: 100%;
@@ -1542,7 +1708,7 @@ FANCYBOX
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 305, ../src/style.scss */
+/* line 334, ../src/style.scss */
 #fancybox-frame {
   position: relative;
   width: 100%;
@@ -1551,7 +1717,7 @@ FANCYBOX
   display: block;
 }
 
-/* line 306, ../src/style.scss */
+/* line 335, ../src/style.scss */
 #fancybox-title {
   position: absolute;
   bottom: 0;
@@ -1561,14 +1727,14 @@ FANCYBOX
   z-index: 1102;
 }
 
-/* line 307, ../src/style.scss */
+/* line 336, ../src/style.scss */
 .fancybox-title-inside {
   padding: 10px 0;
   text-align: center;
   color: #333;
 }
 
-/* line 308, ../src/style.scss */
+/* line 337, ../src/style.scss */
 .fancybox-title-outside {
   padding-top: 5px;
   color: #FFF;
@@ -1576,31 +1742,31 @@ FANCYBOX
   font-weight: bold;
 }
 
-/* line 309, ../src/style.scss */
+/* line 338, ../src/style.scss */
 .fancybox-title-over {
   color: #FFF;
   text-align: left;
 }
 
-/* line 310, ../src/style.scss */
+/* line 339, ../src/style.scss */
 #fancybox-title-over {
   padding: 10px;
   background-image: url("../images/fancybox/fancy_title_over.png");
   display: block;
 }
 
-/* line 311, ../src/style.scss */
+/* line 340, ../src/style.scss */
 #fancybox-title-wrap {
   display: inline-block;
 }
 
-/* line 312, ../src/style.scss */
+/* line 341, ../src/style.scss */
 #fancybox-title-wrap span {
   height: 32px;
   float: left;
 }
 
-/* line 313, ../src/style.scss */
+/* line 342, ../src/style.scss */
 #fancybox-title-left {
   padding-left: 15px;
   background-image: url("../images/fancybox/fancybox.png");
@@ -1608,7 +1774,7 @@ FANCYBOX
   background-repeat: no-repeat;
 }
 
-/* line 314, ../src/style.scss */
+/* line 343, ../src/style.scss */
 #fancybox-title-main {
   font-weight: bold;
   line-height: 29px;
@@ -1617,7 +1783,7 @@ FANCYBOX
   color: #FFF;
 }
 
-/* line 315, ../src/style.scss */
+/* line 344, ../src/style.scss */
 #fancybox-title-right {
   padding-left: 15px;
   background-image: url("../images/fancybox/fancybox.png");
@@ -1625,7 +1791,7 @@ FANCYBOX
   background-repeat: no-repeat;
 }
 
-/* line 316, ../src/style.scss */
+/* line 345, ../src/style.scss */
 #fancybox-left, #fancybox-right {
   position: absolute;
   bottom: 0px;
@@ -1638,17 +1804,17 @@ FANCYBOX
   display: none;
 }
 
-/* line 317, ../src/style.scss */
+/* line 346, ../src/style.scss */
 #fancybox-left {
   left: 0px;
 }
 
-/* line 318, ../src/style.scss */
+/* line 347, ../src/style.scss */
 #fancybox-right {
   right: 0px;
 }
 
-/* line 319, ../src/style.scss */
+/* line 348, ../src/style.scss */
 #fancybox-left-ico, #fancybox-right-ico {
   position: absolute;
   top: 50%;
@@ -1661,36 +1827,36 @@ FANCYBOX
   display: block;
 }
 
-/* line 320, ../src/style.scss */
+/* line 349, ../src/style.scss */
 #fancybox-left-ico {
   background-image: url("../images/fancybox/fancybox.png");
   background-position: -40px -30px;
 }
 
-/* line 321, ../src/style.scss */
+/* line 350, ../src/style.scss */
 #fancybox-right-ico {
   background-image: url("../images/fancybox/fancybox.png");
   background-position: -40px -60px;
 }
 
-/* line 322, ../src/style.scss */
+/* line 351, ../src/style.scss */
 #fancybox-left:hover, #fancybox-right:hover {
   visibility: visible;
   /* IE6 */
 }
 
-/* line 323, ../src/style.scss */
+/* line 352, ../src/style.scss */
 #fancybox-left:hover span {
   left: 20px;
 }
 
-/* line 324, ../src/style.scss */
+/* line 353, ../src/style.scss */
 #fancybox-right:hover span {
   left: auto;
   right: 20px;
 }
 
-/* line 325, ../src/style.scss */
+/* line 354, ../src/style.scss */
 .fancy-bg {
   position: absolute;
   padding: 0;
@@ -1701,7 +1867,7 @@ FANCYBOX
   z-index: 1001;
 }
 
-/* line 326, ../src/style.scss */
+/* line 355, ../src/style.scss */
 #fancy-bg-n {
   top: -20px;
   left: 0;
@@ -1709,7 +1875,7 @@ FANCYBOX
   background-image: url("../images/fancybox/fancybox-x.png");
 }
 
-/* line 327, ../src/style.scss */
+/* line 356, ../src/style.scss */
 #fancy-bg-ne {
   top: -20px;
   right: -20px;
@@ -1717,7 +1883,7 @@ FANCYBOX
   background-position: -40px -162px;
 }
 
-/* line 328, ../src/style.scss */
+/* line 357, ../src/style.scss */
 #fancy-bg-e {
   top: 0;
   right: -20px;
@@ -1726,7 +1892,7 @@ FANCYBOX
   background-position: -20px 0px;
 }
 
-/* line 329, ../src/style.scss */
+/* line 358, ../src/style.scss */
 #fancy-bg-se {
   bottom: -20px;
   right: -20px;
@@ -1734,7 +1900,7 @@ FANCYBOX
   background-position: -40px -182px;
 }
 
-/* line 330, ../src/style.scss */
+/* line 359, ../src/style.scss */
 #fancy-bg-s {
   bottom: -20px;
   left: 0;
@@ -1743,7 +1909,7 @@ FANCYBOX
   background-position: 0px -20px;
 }
 
-/* line 331, ../src/style.scss */
+/* line 360, ../src/style.scss */
 #fancy-bg-sw {
   bottom: -20px;
   left: -20px;
@@ -1751,7 +1917,7 @@ FANCYBOX
   background-position: -40px -142px;
 }
 
-/* line 332, ../src/style.scss */
+/* line 361, ../src/style.scss */
 #fancy-bg-w {
   top: 0;
   left: -20px;
@@ -1759,7 +1925,7 @@ FANCYBOX
   background-image: url("../images/fancybox/fancybox-y.png");
 }
 
-/* line 333, ../src/style.scss */
+/* line 362, ../src/style.scss */
 #fancy-bg-nw {
   top: -20px;
   left: -20px;
@@ -1768,81 +1934,81 @@ FANCYBOX
 }
 
 /* IE */
-/* line 335, ../src/style.scss */
+/* line 364, ../src/style.scss */
 #fancybox-loading.fancybox-ie div {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale');
 }
 
-/* line 337, ../src/style.scss */
+/* line 366, ../src/style.scss */
 .fancybox-ie #fancybox-close {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale');
 }
-/* line 338, ../src/style.scss */
+/* line 367, ../src/style.scss */
 .fancybox-ie #fancybox-title-over {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale');
   zoom: 1;
 }
-/* line 339, ../src/style.scss */
+/* line 368, ../src/style.scss */
 .fancybox-ie #fancybox-title-left {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale');
 }
-/* line 340, ../src/style.scss */
+/* line 369, ../src/style.scss */
 .fancybox-ie #fancybox-title-main {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale');
 }
-/* line 341, ../src/style.scss */
+/* line 370, ../src/style.scss */
 .fancybox-ie #fancybox-title-right {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale');
 }
-/* line 342, ../src/style.scss */
+/* line 371, ../src/style.scss */
 .fancybox-ie #fancybox-left-ico {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale');
 }
-/* line 343, ../src/style.scss */
+/* line 372, ../src/style.scss */
 .fancybox-ie #fancybox-right-ico {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale');
 }
-/* line 344, ../src/style.scss */
+/* line 373, ../src/style.scss */
 .fancybox-ie .fancy-bg {
   background: transparent !important;
 }
-/* line 345, ../src/style.scss */
+/* line 374, ../src/style.scss */
 .fancybox-ie #fancy-bg-n {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_n.png', sizingMethod='scale');
 }
-/* line 346, ../src/style.scss */
+/* line 375, ../src/style.scss */
 .fancybox-ie #fancy-bg-ne {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_ne.png', sizingMethod='scale');
 }
-/* line 347, ../src/style.scss */
+/* line 376, ../src/style.scss */
 .fancybox-ie #fancy-bg-e {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_e.png', sizingMethod='scale');
 }
-/* line 348, ../src/style.scss */
+/* line 377, ../src/style.scss */
 .fancybox-ie #fancy-bg-se {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_se.png', sizingMethod='scale');
 }
-/* line 349, ../src/style.scss */
+/* line 378, ../src/style.scss */
 .fancybox-ie #fancy-bg-s {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_s.png', sizingMethod='scale');
 }
-/* line 350, ../src/style.scss */
+/* line 379, ../src/style.scss */
 .fancybox-ie #fancy-bg-sw {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_sw.png', sizingMethod='scale');
 }
-/* line 351, ../src/style.scss */
+/* line 380, ../src/style.scss */
 .fancybox-ie #fancy-bg-w {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_w.png', sizingMethod='scale');
 }
-/* line 352, ../src/style.scss */
+/* line 381, ../src/style.scss */
 .fancybox-ie #fancy-bg-nw {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_nw.png', sizingMethod='scale');
 }
@@ -1852,42 +2018,42 @@ PRINT STYLES - inlined to avoid required HTTP connection
 www.phpied.com/delay-loading-your-print-css/
 ------------------------------------------------------------------*/
 @media print {
-  /* line 361, ../src/style.scss */
+  /* line 390, ../src/style.scss */
   * {
     background: transparent !important;
     color: #444 !important;
     text-shadow: none;
   }
 
-  /* line 362, ../src/style.scss */
+  /* line 391, ../src/style.scss */
   a, a:visited {
     color: #444 !important;
     text-decoration: underline;
   }
 
-  /* line 363, ../src/style.scss */
+  /* line 392, ../src/style.scss */
   a:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 364, ../src/style.scss */
+  /* line 393, ../src/style.scss */
   abbr:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 365, ../src/style.scss */
+  /* line 394, ../src/style.scss */
   .ir a:after {
     content: "";
   }
 
   /* Don't show links for images */
-  /* line 366, ../src/style.scss */
+  /* line 395, ../src/style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 367, ../src/style.scss */
+  /* line 396, ../src/style.scss */
   img {
     page-break-inside: avoid;
   }
@@ -1896,13 +2062,13 @@ www.phpied.com/delay-loading-your-print-css/
     margin: 0.5cm;
 }
 
-  /* line 369, ../src/style.scss */
+  /* line 398, ../src/style.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 370, ../src/style.scss */
+  /* line 399, ../src/style.scss */
   h2, h3 {
     page-break-after: avoid;
   }
@@ -1923,7 +2089,7 @@ MEDIA QUERIES
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
   /* Prevent iOS, WinMobile from adjusting font size */
-  /* line 387, ../src/style.scss */
+  /* line 416, ../src/style.scss */
   html {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
