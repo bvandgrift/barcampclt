@@ -5,6 +5,6 @@
                     <li class="schedule<%= " active" if @item[:nav] == 'schedule' %>"><a href="/schedule/"><span></span>Schedule</a></li>
                     <li class="sponsor<%= " active" if @item[:nav] == 'sponsor' %>"><a href="/sponsor/"><span></span>Sponsor</a></li>
                     <li class="volunteer<%= " active" if @item[:nav] == 'volunteer' %>"><a href="/volunteer/"><span></span>Volunteer</a></li>
-                    <li class="register"><a href="/register"><span></span>Register</a></li>
+                    <li class="register<%= " active" if @item[:nav] == 'register' %>"><a href="/register/"><span></span>Register</a></li>
                 </ul>
             </nav>

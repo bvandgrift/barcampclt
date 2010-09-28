@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>BarCamp Charlotte 4 - Oct 9th, 2010 | Gather, Share, Learn &amp; Discuss</title>
+    <title><%= @item[:title]%></title>
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="/css/style.css?v=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1">
     <link rel="stylesheet" media="handheld" href="/css/handheld.css?v=1"><!-- For the less-enabled mobile browsers like Opera Mini -->
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><!-- jQuery linked from Google = faster & possibly already in users cache -->
@@ -43,16 +43,14 @@
     <script src="js/dd_belatedpng.js?v=1"></script>
     <![endif]-->
 
-    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
     <script>
-    var _gaq = [['_setAccount', 'UA-205191-12'], ['_trackPageview']];
+    var _gaq = [['_setAccount', 'UA-798946-28'], ['_trackPageview']];
     (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = '//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
+      var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = '//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
     })(document, 'script');
     </script>
 </body>
