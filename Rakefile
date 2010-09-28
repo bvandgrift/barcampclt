@@ -20,7 +20,11 @@ def path_tree(path,to_copy=[])
   tree.flatten
 end
 
-task :copy_assets do
+task :compile_css do
+  sh "compass compile --sass-dir assets/src/ --css-dir assets/css/"
+end
+
+task :copy_assets => [:compile_css] do
   puts "Copying assets from '#{config['asset_dir']}'"
   path_tree(config['asset_dir']).each do |asset|
     target = asset.gsub(/#{config['asset_dir']}\//, '')
@@ -37,7 +41,7 @@ task :copy_assets do
   end 
 end
 
-task :view do
+task :view => [:copy_assets] do
   sh "nanoc3 auto"
 end
 
