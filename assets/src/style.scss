@@ -156,8 +156,9 @@ nav{
   .register span{background-position: -250px 0;}
 }
 /*------------------------------------------------------------------
-PHOTOS
+HOMEPAGE
 ------------------------------------------------------------------*/
+/* photos */
 #photos{
   height:300px;margin-bottom:45px;width:100%;
   #row-one,#row-two{height:150px;left:-5%;overflow:hidden;position:absolute;top:165px;width:150%;z-index:1;}
@@ -194,9 +195,7 @@ PHOTOS
 	a span{@include opacity(0.8);@include transition(opacity,0.2s,ease-in);}
 	a:hover span{@include opacity(1);@include transition(opacity,0.2s,ease-in);}
 }
-/*------------------------------------------------------------------
-HELP
-------------------------------------------------------------------*/
+/* help */
 #help{
 	margin: 0 auto;width:940px;
   div{border-top:15px solid #f4f3de;border-color:rgba(244,243,222,0.3);margin-bottom:29px;padding-top:25px;@include transition(border,0.4s,ease-in);}
@@ -204,17 +203,13 @@ HELP
   h2{font-size:260%;text-shadow:1px 1px 0px #72512d;text-transform:uppercase;}
   p{font-size:100%;line-height:200%;margin-bottom:17px;}
 }
-/*------------------------------------------------------------------
-QUOTES
-------------------------------------------------------------------*/
+/* quotes */
 #quotes{
 	border-top:15px solid #f4f3de;border-color:rgba(244,243,222,0.3);font-size:120%;margin:0 auto 60px;padding:30px 0 24px;@include transition(border,0.4s,ease-in);text-shadow:1px 1px 0px #72512d;width:940px;
 	em{font-size:80%;@include opacity(0.6);}
 }
 #quotes:hover{border-color:rgba(47,58,60,0.8);@include transition(border,0.3s,ease-in);}
-/*------------------------------------------------------------------
-TWITTER
-------------------------------------------------------------------*/
+/* twitter */
 #twitter{
 	background: #2f3a3c url('../images/blue-background.jpg') top left repeat-x;color:#bdd3d8;height:451px;margin-bottom:40px;position:relative;
 	a{color:#bb5549}
@@ -282,7 +277,7 @@ Volunteers
 /*------------------------------------------------------------------
 SPONSORS
 ------------------------------------------------------------------*/
-#sponsors{
+#sponsorship{
 	margin: 0 auto;width:940px;
   h2{clear:both;font-size:260%;margin-bottom:1px;text-shadow:1px 1px 0px #72512d;text-transform:uppercase;}
   ul{list-style:none;margin:0 0 12px 10px;}
