@@ -21,7 +21,7 @@ def path_tree(path,to_copy=[])
 end
 
 task :compile_css do
-  sh "compass compile --sass-dir assets/src/ --css-dir assets/css/"
+  sh "compass compile --sass-dir assets/src/ --css-dir assets/css/ --output-style compact"
 end
 
 task :copy_assets => [:compile_css] do

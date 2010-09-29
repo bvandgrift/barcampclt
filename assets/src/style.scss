@@ -1,6 +1,6 @@
 @import 'compass/css3';
 /*------------------------------------------------------------------
-BarCamp Charlotte Styles
+BarCamp Charlotte Styles 2
 By:Bermon Painter - http://bermonpainter.com
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -107,7 +107,7 @@ a:link { -webkit-tap-highlight-color: #4aa3b3; }
 LINKS & BUTTONS
 ------------------------------------------------------------------*/
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color:#607890; }
+a, a:active { color:#607890; }
 a:hover { color:#036; }
 button, .button{background-image:url('../images/default-ribbon-button.png');color:#632922;display:inline-block;font: 130% Chunk;height:48px;left:-10px;line-height:49px;padding-right:20px;position:relative;text-indent:40px;text-decoration:none;text-shadow:1px 1px 0px #c87a6f;}
 button .corner, .button .corner{background:url('../images/default-ribbon-button.png') top right no-repeat;height:48px;right:-30px;position:absolute;top:0px;width:30px;}
@@ -134,7 +134,6 @@ LAYOUT
   .column-one,.column-two,.column-three,.column-four, li{float:left;margin-right:20px;width:220px;}
   .column-four, li:last-child{margin-right:0;}
 }
-
 /*------------------------------------------------------------------
 HEADER
 ------------------------------------------------------------------*/
@@ -189,9 +188,9 @@ PHOTOS
 #register-cta{
   background-image: url('../images/blue-box.png');float:right;height:270px;position:relative;top:45px;right:40px;@include box-shadow(rgba(0,0,0,0.2), 3px, 3px, 0px, 0px);width:460px;z-index:2;
   //h1{color:#1e2527;font-size:225%;line-height:109.5%;margin:33px 30px 15px;text-shadow:1px 1px 0px #505c5e}
-	h1{color:#1e2527;font-size:295%;line-height:95%;margin:28px 30px 2px;@include opacity(0.8);text-shadow:1px 1px 0px #505c5e;}
-  p{color:#bdd3d8;font-size:85%;line-height:235%;margin:0 30px 15px;text-shadow:1px 1px 0px #1e2527}
-  a{background-image: url('../images/red-ribbon.png');bottom:-12px;color:#632922;display:block;font: 250% Chunk;height:108px;line-height:111px;left:-76px;position:absolute;text-decoration:none;text-indent: 100px;text-shadow:1px 1px 0px #c87a6f;width:489px;}
+	h1{color:#1e2527;font-size:295%;line-height:95%;margin:28px 30px 12px;@include opacity(0.8);text-shadow:1px 1px 0px #505c5e;}
+  p{color:#bdd3d8;font-size:85%;line-height:190%;margin:0 30px 15px;text-shadow:1px 1px 0px #1e2527}
+  a{background-image: url('../images/red-ribbon.png');bottom:-12px;color:#632922;display:block;font: 200% Chunk;height:108px;line-height:345%;left:-76px;position:absolute;text-decoration:none;text-indent: 100px;text-shadow:1px 1px 0px #c87a6f;width:489px;}
 	a span{@include opacity(0.8);@include transition(opacity,0.2s,ease-in);}
 	a:hover span{@include opacity(1);@include transition(opacity,0.2s,ease-in);}
 }
@@ -209,7 +208,7 @@ HELP
 QUOTES
 ------------------------------------------------------------------*/
 #quotes{
-	border-top:15px solid #f4f3de;border-color:rgba(244,243,222,0.3);font-size:120%;margin:0 auto 30px;padding:30px 0 24px;@include transition(border,0.4s,ease-in);text-shadow:1px 1px 0px #72512d;width:940px;
+	border-top:15px solid #f4f3de;border-color:rgba(244,243,222,0.3);font-size:120%;margin:0 auto 60px;padding:30px 0 24px;@include transition(border,0.4s,ease-in);text-shadow:1px 1px 0px #72512d;width:940px;
 	em{font-size:80%;@include opacity(0.6);}
 }
 #quotes:hover{border-color:rgba(47,58,60,0.8);@include transition(border,0.3s,ease-in);}
@@ -219,7 +218,7 @@ TWITTER
 #twitter{
 	background: #2f3a3c url('../images/blue-background.jpg') top left repeat-x;color:#bdd3d8;height:451px;margin-bottom:40px;position:relative;
 	a{color:#bb5549}
-	h2{background-image: url('../images/red-ribbon-full.png');height:103px;margin:0 auto -70px;position:relative;top:-31px;width:515px;z-index:15}
+	h2{background-image: url('../images/red-ribbon-full.png');height:103px;margin:0 auto -70px;position:relative;top:-51px;width:515px;z-index:15}
 	h2 a{color:#632922;display:block;font-size: 200%;line-height:320%;text-align:center;text-decoration:none;text-shadow:1px 1px 0px #c87a6f;}
 	h2 span{display:none;}
 	.top,.bottom{background: url('../images/blue-background-edges.png');display:block;height:8px;position:absolute;right:0;left:0;}
@@ -249,8 +248,7 @@ SCHEDULE
 	img{@include opacity(0.5);@include transition(opacity,0.4s,ease-in);}
 	a:hover img{@include opacity(1);@include transition(opacity,0.4s,ease-in);}
   p{font-size:100%;line-height:200%;margin-bottom:17px;}
-    span {font-size: 160%; font-style: italics;}
-
+  span {font-size: 160%; font-style: italics;}
 }
 /*------------------------------------------------------------------
 Venue

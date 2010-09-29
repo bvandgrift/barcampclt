@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title><%= @item[:title]%></title>
+    <% if @item[:nav] == 'home' %>
+    <title><%= @item[:title] %></title>
+    <% else %>
+    <title><%= @item[:title] %> | BarCamp Charlotte 4 - Oct 9th, 2010</title>
+    <% end %>
 
     <meta name="description" content="">
     <meta name="author" content="">

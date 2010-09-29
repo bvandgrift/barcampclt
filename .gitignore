@@ -2,4 +2,6 @@
 output
 tmp
 .DS_Store
+.livereload
+.sass-cache/
 output.diff
