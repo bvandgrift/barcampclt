@@ -85,4 +85,4 @@ Website is powered by [nanoc](http://nanoc.stoneship.org), designed by [Bermon P
 Donations
 ---------
 
-Any donations (http://github.com/bvandgrift/barcampclt) will go toward the hosting of the site, purchased graphics, and the technical meat of BarCamp Charlotte.
+Any donations [through github](http://github.com/bvandgrift/barcampclt) will go toward the hosting of the site, purchased graphics, and the technical meat of BarCamp Charlotte.
