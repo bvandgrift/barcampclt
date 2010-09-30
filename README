@@ -8,15 +8,15 @@ application.
 For info: http://nanoc.stoneship.org
 
 Installation
-============
+------------
 
 Nanoc requires rsync and the following ruby gems:
 
-run: sudo gem install kramdown asdf nanoc
+  sudo gem install kramdown asdf nanoc compass
 
 
 Making Changes
-==============
+--------------
 
 The content directory contains the base files from which the
 site is built.  These are pages which will be compiled through
@@ -47,25 +47,37 @@ view the site to verify them before deploying.
 When you get the changes you want, check them into the git repo.
 
 Viewing the Site Locally
-========================
-Visit your changes at http://localhost:3000
+------------------------
 
-run: nanoc auto
+Visit your changes at _http://localhost:3000_:
+
+  nanoc auto
+
 OR
-run: rake view
+
+  rake view
 
 
 Building the Site
-=================
+-----------------
+
 Builds the site and copies the assets into the output directory.
 
-run: rake build
-
+  rake build
 
 Deploying the Site
-==================
+------------------
+
 Builds the site and syncs to the deployed installation.
 
-run: rake deploy
+  rake deploy
 
+License
+-------
 
+BarCamp Charlotte content is licensed under a Creative Commons Attribution 3.0 License except where otherwise noted.
+
+Credits
+-------
+
+Website is powered by [nanoc](http://nanoc.stoneship.org), designed by [Bermon Painter](http://bermonpainter.com), developed and hosted by [Start Charlotte](http://startcharlotte.com).
