@@ -2,17 +2,17 @@ Introduction
 ============
 
 nanoc compiles static html sites from bits, preventing both
-html reuse, and the overhead of a cms.  It's ideal for this
+html reuse, and the overhead of a cms.  It is ideal for this
 application.
 
-For info: http://nanoc.stoneship.org
+For info: [nanoc](http://nanoc.stoneship.org)
 
 Installation
 ------------
 
 Nanoc requires rsync and the following ruby gems:
 
-  sudo gem install kramdown asdf nanoc compass
+    sudo gem install kramdown asdf nanoc compass
 
 
 Making Changes
@@ -49,13 +49,13 @@ When you get the changes you want, check them into the git repo.
 Viewing the Site Locally
 ------------------------
 
-Visit your changes at _http://localhost:3000_:
+Visit your changes at [http://localhost:3000](http://localhost:3000):
 
-  nanoc auto
+    nanoc auto
 
 OR
 
-  rake view
+    rake view
 
 
 Building the Site
@@ -63,14 +63,14 @@ Building the Site
 
 Builds the site and copies the assets into the output directory.
 
-  rake build
+    rake build
 
 Deploying the Site
 ------------------
 
 Builds the site and syncs to the deployed installation.
 
-  rake deploy
+    rake deploy
 
 License
 -------
@@ -81,3 +81,8 @@ Credits
 -------
 
 Website is powered by [nanoc](http://nanoc.stoneship.org), designed by [Bermon Painter](http://bermonpainter.com), developed and hosted by [Start Charlotte](http://startcharlotte.com).
+
+Donations
+---------
+
+Any donations (http://github.com/bvandgrift/barcampclt) will go toward the hosting of the site, purchased graphics, and the technical meat of BarCamp Charlotte.
