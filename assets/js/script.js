@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#row-one a').clone().appendTo('#row-one');
 	$('#row-two a').clone().appendTo('#row-two');
 	// modal box for photos on homepage
-	$("#photos a").fancybox();
+	$("#photos .photos a").fancybox();
 	
 	// Twitter placement on the homepage
 	$('#barcampclt .tweets').twitterSearch({
