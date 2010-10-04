@@ -22,6 +22,10 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><!-- jQuery linked from Google = faster & possibly already in users cache -->
     <script src="/js/plugins.js"></script>
+    <% if @item[:nav] == 'venue' %>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAxvRN4nyyS2uXyutgQjKkTBTMKujcmyxXngLwgMQwWZLE1rES7RS0vLDfXzDR7kSehc924whAQmT45w" type="text/javascript"></script>
+    <script src="/js/jquery.googlemaps.js"></script>
+    <% end %>
     <script src="/js/modernizr-1.5.min.js"></script><!-- Modernizr enables HTML5 elements & feature detects -->
     <script src="/js/script.js"></script>
 </head>
