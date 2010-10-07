@@ -269,6 +269,12 @@ VENUE
 SCHEDULE
 ------------------------------------------------------------------*/
 #schedule{
+	ul{margin:0;padding:0;}
+	li{border-top:1px dashed #f4f3de;border-color:rgba(244,243,222,0.3);padding:15px 0 10px;}
+	b{float:left;font-size:150%;margin-bottom:5px;width:830px;}
+	.icon{background-color:#d5ccb3;@include border-radius(20px);float:left;height:43px;margin:10px 20px 10px 10px;width:43px;}
+	.time{color:#d3d0b4;float:left;width:830px;}
+	.details{font-size:80%;float:left;width:830px;}
 }
 /*------------------------------------------------------------------
 Volunteers

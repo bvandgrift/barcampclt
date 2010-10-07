@@ -273,6 +273,7 @@ article { margin: 0 auto; width: 940px; }
 article h1 { font-size: 300%; margin-bottom: 0px; text-transform: uppercase; }
 article h2 { font-size: 200%; margin-bottom: 10px; text-transform: uppercase; }
 article p { font-size: 95%; line-height: 140%; margin-bottom: 15px; }
+article ul { margin-bottom: 15px; }
 article a { color: #fff; }
 article section { border-top: 15px solid #f4f3de; border-color: rgba(244, 243, 222, 0.3); margin-bottom: 29px; padding-top: 25px; -moz-transition-property: border; -webkit-transition-property: border; -o-transition-property: border; transition-property: border; -moz-transition-duration: 0.4s; -webkit-transition-duration: 0.4s; -o-transition-duration: 0.4s; transition-duration: 0.4s; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; transition-timing-function: ease-in; }
 
@@ -288,6 +289,13 @@ VENUE
 /*------------------------------------------------------------------
 SCHEDULE
 ------------------------------------------------------------------*/
+#schedule ul { margin: 0; padding: 0; }
+#schedule li { border-top: 1px dashed #f4f3de; border-color: rgba(244, 243, 222, 0.3); padding: 15px 0 10px; }
+#schedule b { float: left; font-size: 150%; margin-bottom: 5px; width: 830px; }
+#schedule .icon { background-color: #d5ccb3; -moz-border-radius: 20px; -webkit-border-radius: 20px; -o-border-radius: 20px; -ms-border-radius: 20px; -khtml-border-radius: 20px; border-radius: 20px; float: left; height: 43px; margin: 10px 20px 10px 10px; width: 43px; }
+#schedule .time { color: #d3d0b4; float: left; width: 830px; }
+#schedule .details { font-size: 80%; float: left; width: 830px; }
+
 /*------------------------------------------------------------------
 Volunteers
 ------------------------------------------------------------------*/
