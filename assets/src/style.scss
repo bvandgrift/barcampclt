@@ -69,13 +69,11 @@ BASE STYLES
 
 */
 html { -webkit-font-smoothing: antialiased; }
-body {background: #996d3e url('../images/background.jpg') top left;font-family:junction;}
+body {background: #996d3e url('../images/background.jpg') top left;font-family:Junction, Helvetica;}
 body, select, input, textarea { color:#f4f3de; }
 /* headers */
-h1,h2,h3,h4,h5,h6 { font-family:Chunk;font-weight: bold; text-rendering: optimizeLegibility; }
+h1,h2,h3,h4,h5,h6 { font-family:Chunk, Georgia;font-weight: bold; text-rendering: optimizeLegibility; }
 strong, th { font-weight: bold; }
-/* links */
-
 /* lists */
 ul { margin-left:30px; }
 ol { margin-left:30px; list-style-type: decimal; }
@@ -109,7 +107,7 @@ LINKS & BUTTONS
 a:hover, a:active { outline: none; }
 a, a:active { color:#607890; }
 a:hover { color:#036; }
-button, .button{background-image:url('../images/default-ribbon-button.png');color:#632922;display:inline-block;font: 130% Chunk;height:48px;left:-10px;line-height:49px;padding-right:20px;position:relative;text-indent:40px;text-decoration:none;text-shadow:1px 1px 0px #c87a6f;}
+button, .button{background-image:url('../images/default-ribbon-button.png');color:#632922;display:inline-block;font: 130% Chunk, Georgia;height:48px;left:-10px;line-height:49px;padding-right:20px;position:relative;text-indent:40px;text-decoration:none;text-shadow:1px 1px 0px #c87a6f;}
 button .corner, .button .corner{background:url('../images/default-ribbon-button.png') top right no-repeat;height:48px;right:-30px;position:absolute;top:0px;width:30px;}
 button:hover, .button:hover{color:#632922;}
 button .text, .button .text{@include opacity(0.8);@include transition(opacity,0.2s,ease-in);}
@@ -140,7 +138,7 @@ HEADER
 #masthead{margin:0 auto;padding:30px 0 45px;position:relative;width:940px;}
 #logo{background-image: url('../images/barcamp-charlotte-logo.png');height:90px;margin-left:-20px;width:327px;}
 nav{
-  font: 85% Junction;position:absolute;right:-15px;top:16px;width:640px;
+  font: 85% Junction, Helvetica;position:absolute;right:-15px;top:16px;width:640px;
   ul{width:100%;}
   li{background: url('../images/nav-background.png') top left no-repeat;float:left;height:91;margin:7px 5px;text-align:center;text-shadow:1px 1px 0px #72512d;width:91px;}
   li:first-child{margin-left:0px;}
@@ -277,26 +275,6 @@ SCHEDULE
 	.details{font-size:80%;float:left;width:830px;}
 }
 /*------------------------------------------------------------------
-Volunteers
-------------------------------------------------------------------*/
-#volunteers{
-}
-/*------------------------------------------------------------------
-SPONSORS
-------------------------------------------------------------------*/
-#sponsorship{
-}
-/*------------------------------------------------------------------
-BENEFITS
-------------------------------------------------------------------*/
-#benefits{
-}
-/*------------------------------------------------------------------
-SPONSOR CONTACT
-------------------------------------------------------------------*/
-#sponsor-contact{
-}
-/*------------------------------------------------------------------
 FOOTER
 ------------------------------------------------------------------*/
 footer{
@@ -404,5 +382,89 @@ MEDIA QUERIES
 @media screen and (max-device-width: 480px) {
   /* Prevent iOS, WinMobile from adjusting font size */
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+    /* layout */
+    #container{margin:0 auto;width:auto;}
+    .two-columns{
+      clear:both;margin-bottom:30px;
+      .column-one,.column-two{float:none;margin:0;width:auto;}
+      .column-one{margin-right:0;}
+    }
+    .three-columns{
+      clear:both;margin-bottom:30px;
+      .column-one,.column-two,.column-three{float:none;margin:0;width:auto;}
+      .column-three{margin-right:0;}
+    }
+    .four-columns{
+      clear:both;margin-bottom:30px;
+      .column-one,.column-two,.column-three,.column-four, li{float:none;margin-right:0;width:auto;}
+    }
+    /* basic */
+    #masthead{margin:0 auto;padding:0;width:auto;}
+    #logo{margin:10px auto 0;}
+    nav{
+        position:relative;width:auto;
+        ul{margin:0 0 40px 25px;width:auto;}
+        li{display:inline-block;float:none;}
+    }
+    footer{
+    	.inner{margin:0 20px;width:auto;}
+    	p{margin-bottom:10px;}
+    }
+    /* homepage */
+    #photos{
+        height:auto;display:none;
+        #row-one,#row-two{display:none;}
+        #register-cta{float:none;height:270px;position:relative;left:-15px;top:0;right:0;width:460px;z-index:2;}
+    }
+    #help{
+        display:none;width:auto;
+        h2{font-size: 200%;}
+        p{font-size:90%}
+    }
+    #quotes{display:none;}
+    #twitter{
+      margin-top:0;
+    	a{color:#bb5549}
+    	h2{display:none;}
+    	h2 span{display:none;}
+    	.inner{margin:10px 20px;width:auto;}
+    	.column-two, .column-three{display:none;}
+    	.tweets{
+    		height:380px;font-size:90%;
+    		.text{width:270px;}
+    	}
+    	ul{margin:20px 0 0 0;}
+    }
+    #sponsors{
+    	margin: 0 20px;width:auto;
+      h3{clear:both;font-size:150%;}
+      ul{list-style:none;margin:0 0 12px;}
+    	li{display:inline-block;margin-right:10px;width:150px;}
+    	li:nth-child(even){margin-right:0px;}
+    	img{height:61px;width:125px;}
+    }
+    /* content pages */
+    article{
+    	margin: 0 20px;width:auto;
+    	h1{font-size:220%;}
+    	h2{font-size:150%;margin-bottom:10px;}
+    	p{font-size:95%;}
+    	section{margin:0 0 30px;}
+    }
+    /* venue */
+    #venue{
+    	.vcard{float:none;}
+    	.gps{float:none;margin-bottom:10px;}
+    }
+    #venue-map{
+    	.inner{height:260px}
+    }
+    /* schedule */
+    #schedule{
+    	b{font-size:130%;width:240px;}
+    	.time{width:240px;}
+    	.details{display:none;}
+    	.icon{margin:0px 20px 10px 10px;}
+    }
 }
 
