@@ -1,6 +1,18 @@
+begin
+  # Try to require the preresolved locked set of gems.
+  require File.expand_path('../.bundle/environment', __FILE__)
+  rescue LoadError
+  # Fall back on doing an unlocked resolve at runtime.
+  require "rubygems"
+  require "bundler"
+  Bundler.setup
+end
+
 require 'nanoc3/tasks'
+
 require 'fileutils'
 %w{yaml}.each{|lib| require lib}
+
 # a rake task to copy any css and javascript 
 # files over to the webroot output directory
 
@@ -53,6 +65,11 @@ end
 task :compile do
   puts "Compiling content."
   sh "nanoc3 co"
+end
+
+desc "Watches and automatically compiles the site"
+task :auto => :compile do
+  sh "nanoc3 aco"
 end
 
 task :build => [:compile, :copy_assets]

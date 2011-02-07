@@ -1,0 +1,10 @@
+            <nav class="clearfix">
+                <ul>
+                    <li class="home<%= " active" if @item[:nav] == 'home' %>"><a href="/"><span></span>Home</a></li>
+                    <li class="venue<%= " active" if @item[:nav] == 'venue' %>"><a href="/venue/"><span></span>Venue</a></li>
+                    <li class="schedule<%= " active" if @item[:nav] == 'schedule' %>"><a href="http://barcampcharlotte.heroku.com/"><span></span>Schedule</a></li>
+                    <li class="sponsor<%= " active" if @item[:nav] == 'sponsor' %>"><a href="/sponsor/"><span></span>Sponsor</a></li>
+                    <li class="volunteer<%= " active" if @item[:nav] == 'volunteer' %>"><a href="/volunteer/"><span></span>Volunteer</a></li>
+                    <li class="register<%= " active" if @item[:nav] == 'register' %>"><a href="http://anyvite.com/events/home/noui3c9ym5"><span></span>Register</a></li>
+                </ul>
+            </nav>

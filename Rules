@@ -10,30 +10,77 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/css/' do
-  # don’t filter or layout
+require 'compass'
+Compass.add_project_configuration 'config.rb'
+
+HAML_OPTIONS = {
+  :escape_html => false,
+  :ugly => false,
+  :format => :html5
+}
+
+# ----------------------------------------------------------------------
+# preprocess rules
+# ----------------------------------------------------------------------
+preprocess do
+  # authors may unpublish items by setting meta attribute publish: false
+  # ex: @item:publish = false
+  items.delete_if { |item| item[:publish] == false }
+  
+  # copy the /pres dir & it's assets over to /output
+  copy_pres
 end
 
-compile '/js/' do
-	# ditto
+# ----------------------------------------------------------------------
+# compile rules
+# ----------------------------------------------------------------------
+# compiles the barcamp iv site for posterity
+compile 'iv/*' do
+  # item[:extension] returns 'html.erb' for multi-dotted filename
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+  
+  if ext == 'erb'
+    filter :erb
+  elsif ext == 'haml' || ext.nil?
+    filter :haml, HAML_OPTIONS
+  elsif ext == 'md' || ext == 'markdown'
+    filter :erb
+    filter :kramdown
+  else
+    raise "Filter is not configured for #{item.identifier} in Rules file."
+  end
+  
+  layout '_iv/default' unless item[:layout] == "none"
 end
 
+# compiles the current site (or anything not outlined above in any rules)
 compile '*' do
-  filter :erb
-  layout 'default'
+  # item[:extension] returns 'html.erb' for multi-dotted filename
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+  
+  if ext == 'erb'
+    filter :erb
+  elsif ext == 'haml' || ext == 'html' || ext.nil?
+    filter :erb
+    filter :haml, HAML_OPTIONS
+  elsif ext == 'md' || ext == 'markdown'
+    filter :erb
+    filter :kramdown
+  else
+    raise "Filter is not configured for #{item.identifier} in Rules file."
+  end
+  
+  layout 'default' unless item[:layout] == "none"
 end
 
-route '/css/' do
-  #'/style.css'
-end
+layout '*', :haml, HAML_OPTIONS
 
-route '/js/' do
-	item.identifier + '.test'
-	# TBD
-end
-
+# ----------------------------------------------------------------------
+# route rules
+# ----------------------------------------------------------------------
+# rips off the haml tag and switches it to .html
 route '*' do
   item.identifier + 'index.html'
 end
 
-layout '*', :erb
+
