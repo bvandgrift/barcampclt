@@ -20,7 +20,7 @@ config  = YAML.load(File.open("config.yaml"))
 
 def path_tree(path,to_copy=[])
   tree = []
-  raise "WHUT? Path empty!" if path.empty?
+  raise "WHUT? Path empty!" if path.nil? || path.empty?
   Dir.glob("#{path}/*").each do |path|
     if File.directory?(path)
       tree << path_tree(path)

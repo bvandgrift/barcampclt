@@ -5,6 +5,7 @@ text_extensions: [ 'css', 'erb', 'haml', 'htm', 'html', 'js', 'less', 'markdown'
 output_dir: output
 index_filenames: [ 'index.html' ]
 enable_output_diff: false
+asset_dir: assets
 data_sources:
   -
     type: filesystem_unified
