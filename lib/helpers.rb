@@ -53,8 +53,10 @@ end
 def copy_pres
   FileUtils.cp_r 'assets/.', 'output/assets/'
   # removes the main _scss directory
-  FileUtils.rm Dir.glob('output/assets/scss/*.scss')
-  FileUtils.rmdir 'output/assets/scss/'
+  #FileUtils.rm Dir.glob('output/assets/scss/*.scss')
+  #FileUtils.rmdir 'output/assets/scss/'
+  #FileUtils.rm Dir.glob('output/assets/iv/scss/*.scss')
+  #FileUtils.rmdir 'output/assets/iv/scss/'
 end
 
 # Gets the context of a page from it's yaml file. It'll be used to determine

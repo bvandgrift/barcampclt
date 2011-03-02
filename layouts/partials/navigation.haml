@@ -1,22 +1,22 @@
 %nav.clearfix
   %ul
-    %li.home
+    %li.home{ :class => ("active" if @item.path == '/') }
       %a{:href => "/"}
         %span 
         Home
-    %li.venue
+    %li.venue{ :class => ("active" if @item.path == '/venue/') }
       %a{:href => "/venue/"}
         %span 
         Venue
-    %li.schedule
-      %a{:href => "http://barcampcharlotte.heroku.com/"}
+    %li.schedule{ :class => ("active" if @item.path == '/schedule/') }
+      %a{:href => "/schedule/"}
         %span 
         Schedule
-    %li.sponsor
+    %li.sponsor{ :class => ("active" if @item.path == '/sponsor/') }
       %a{:href => "/sponsor/"}
         %span 
         Sponsor
-    %li.volunteer
+    %li.volunteer{ :class => ("active" if @item.path == '/volunteer/') }
       %a{:href => "/volunteer/"}
         %span 
         Volunteer
