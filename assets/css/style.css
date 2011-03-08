@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
 BarCamp Charlotte Styles
 By:Bermon Painter - http://bermonpainter.com
@@ -432,12 +433,8 @@ www.phpied.com/delay-loading-your-print-css/
 /*------------------------------------------------------------------
 MEDIA QUERIES
 ------------------------------------------------------------------*/
-@media all and (orientation:portrait) { /* Style adjustments for portrait mode goes here */ }
-
-@media all and (orientation:landscape) { /* Style adjustments for landscape mode goes here */ }
-
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome) Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) { /* Prevent iOS, WinMobile from adjusting font size */
+@media screen and (max-width: 480px) { /* Prevent iOS, WinMobile from adjusting font size */
   html { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
   /* layout */
   #container { margin: 0 auto; width: auto; }
@@ -453,7 +450,7 @@ MEDIA QUERIES
   #masthead { margin: 0 auto; padding: 0; width: auto; }
   #logo { margin: 10px auto 0; }
   nav { position: relative; width: auto; }
-  nav ul { margin: 0 0 40px 25px; width: auto; }
+  nav ul { margin: 0 0 40px 0; width: auto; }
   nav li { display: inline-block; float: none; }
   footer .inner { margin: 0 20px; width: auto; }
   footer p { margin-bottom: 10px; }
@@ -472,14 +469,14 @@ MEDIA QUERIES
   #twitter .inner { margin: 10px 20px; width: auto; }
   #twitter .column-two, #twitter .column-three { display: none; }
   #twitter .tweets { height: 380px; font-size: 90%; }
-  #twitter .tweets .text { width: 270px; }
+  #twitter .tweets .text { width: 75%; }
   #twitter ul { margin: 20px 0 0 0; }
   #sponsors { margin: 0 20px; width: auto; }
   #sponsors h3 { clear: both; font-size: 150%; }
   #sponsors ul { list-style: none; margin: 0 0 12px; }
-  #sponsors li { display: inline-block; margin-right: 10px; width: 150px; }
+  #sponsors li { display: inline-block; margin-right: 5px; width: 130px; }
   #sponsors li:nth-child(even) { margin-right: 0px; }
-  #sponsors img { height: 61px; width: 125px; }
+  #sponsors img { height: 51px; width: 105px; }
   /* content pages */
   article { margin: 0 20px; width: auto; }
   article h1 { font-size: 220%; }
@@ -491,7 +488,66 @@ MEDIA QUERIES
   #venue .gps { float: none; margin-bottom: 10px; }
   #venue-map .inner { height: 260px; }
   /* schedule */
-  #schedule b { font-size: 130%; width: 240px; }
-  #schedule .time { width: 240px; }
+  #schedule b { font-size: 130%; width: 70%; }
+  #schedule .time { width: 70%; }
+  #schedule .details { display: none; }
+  #schedule .icon { margin: 0px 20px 10px 10px; } }
+
+@media screen and (max-width: 320px) { /* Prevent iOS, WinMobile from adjusting font size */
+  html { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+  /* layout */
+  #container { margin: 0 auto; width: auto; }
+  .two-columns { clear: both; margin-bottom: 30px; }
+  .two-columns .column-one, .two-columns .column-two { float: none; margin: 0; width: auto; }
+  .two-columns .column-one { margin-right: 0; }
+  .three-columns { clear: both; margin-bottom: 30px; }
+  .three-columns .column-one, .three-columns .column-two, .three-columns .column-three { float: none; margin: 0; width: auto; }
+  .three-columns .column-three { margin-right: 0; }
+  .four-columns { clear: both; margin-bottom: 30px; }
+  .four-columns .column-one, .four-columns .column-two, .four-columns .column-three, .four-columns .column-four, .four-columns li { float: none; margin-right: 0; width: auto; }
+  /* basic */
+  #masthead { margin: 0 auto; padding: 0; width: auto; }
+  #logo { margin: 10px auto 0; }
+  nav { position: relative; width: auto; }
+  nav ul { margin: 0 0 40px 0; width: auto; }
+  nav li { display: inline-block; float: none; }
+  footer .inner { margin: 0 20px; width: auto; }
+  footer p { margin-bottom: 10px; }
+  /* homepage */
+  #photos { height: auto; display: none; }
+  #photos #row-one, #photos #row-two { display: none; }
+  #photos #register-cta { float: none; height: 270px; position: relative; left: -15px; top: 0; right: 0; width: 460px; z-index: 2; }
+  #help { display: none; width: auto; }
+  #help h2 { font-size: 200%; }
+  #help p { font-size: 90%; }
+  #quotes { display: none; }
+  #twitter { margin-top: 0; }
+  #twitter a { color: #bb5549; }
+  #twitter h2 { display: none; }
+  #twitter h2 span { display: none; }
+  #twitter .inner { margin: 10px 20px; width: auto; }
+  #twitter .column-two, #twitter .column-three { display: none; }
+  #twitter .tweets { height: 380px; font-size: 90%; }
+  #twitter .tweets .text { width: 75%; }
+  #twitter ul { margin: 20px 0 0 0; }
+  #sponsors { margin: 0 20px; width: auto; }
+  #sponsors h3 { clear: both; font-size: 150%; }
+  #sponsors ul { list-style: none; margin: 0 0 12px; }
+  #sponsors li { display: inline-block; margin-right: 5px; width: 130px; }
+  #sponsors li:nth-child(even) { margin-right: 0px; }
+  #sponsors img { height: 51px; width: 105px; }
+  /* content pages */
+  article { margin: 0 20px; width: auto; }
+  article h1 { font-size: 220%; }
+  article h2 { font-size: 150%; margin-bottom: 10px; }
+  article p { font-size: 95%; }
+  article section { margin: 0 0 30px; }
+  /* venue */
+  #venue .vcard { float: none; }
+  #venue .gps { float: none; margin-bottom: 10px; }
+  #venue-map .inner { height: 260px; }
+  /* schedule */
+  #schedule b { font-size: 130%; width: 70%; }
+  #schedule .time { width: 70%; }
   #schedule .details { display: none; }
   #schedule .icon { margin: 0px 20px 10px 10px; } }
