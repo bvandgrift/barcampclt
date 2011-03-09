@@ -138,7 +138,7 @@ HEADER
 #masthead{margin:0 auto;padding:30px 0 45px;position:relative;width:940px;}
 #logo{background-image: url('../images/barcamp-charlotte-logo.png');height:90px;margin-left:-20px;width:327px;}
 nav{
-  font: 85% Junction, Helvetica;position:absolute;right:0px;top:16px;width:640px;
+  font: 85% Junction, Helvetica;position:absolute;right:15px;top:16px;width:640px;
   ul{width:100%;}
   li{background: url('../images/nav-background.png') top left no-repeat;float:left;height:91;margin:7px 5px;text-align:center;text-shadow:1px 1px 0px #72512d;width:91px;}
   li:first-child{margin-left:0px;}
@@ -152,7 +152,6 @@ nav{
   .sponsor span{background-position: -150px 0;}
   .volunteer span{background-position: -200px 0;}
   .register span{background-position: -250px 0;}
-  .register{display:block !important;visibility: visible !important;}
 }
 /*------------------------------------------------------------------
 HOMEPAGE
