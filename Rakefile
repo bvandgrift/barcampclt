@@ -32,25 +32,40 @@ def path_tree(path,to_copy=[])
   tree.flatten
 end
 
+desc "Compile SCSS for main files & widgets into CSS"
 task :compile_css do
-  sh "compass compile --sass-dir assets/src/ --css-dir assets/css/ --output-style compact"
+  puts "Compliling SCSS into CSS"
+  # compile the sites main CSS
+  sh "compass compile --output-style compressed --force"
+  # compiles the CSS for past site versions
+  sh "compass compile --sass-dir assets/_iv/scss/ --css-dir assets/_iv/css/ --output-style compressed --force"
 end
 
 task :copy_assets => [:compile_css] do
-  puts "Copying assets from '#{config['asset_dir']}'"
-  path_tree(config['asset_dir']).each do |asset|
-    target = asset.gsub(/#{config['asset_dir']}\//, '')
-    # Some vars
+  output_assets_dir = [config["output_dir"],config["assets_dir"]].join("/")
+  
+  puts "Copying assets from '/#{config['assets_dir']}' to '/#{config['output_assets_dir']}'"
+  
+  # copies files from /assets to /output/assets
+  path_tree(config['assets_dir']).each do |asset|
+    target = asset.gsub(/#{config['assets_dir']}\//, '')
+    
     from  = asset
-    to    = [config["output_dir"],target].join("/")
+    to    = [config["output_dir"],config["assets_dir"],target].join("/")
+    
     if !File.exist?(File.dirname(to))
       FileUtils.mkdir_p(File.dirname(to))
-    end 
+    end
+    
     if !File.exist?(to) || !FileUtils.compare_file(from,to)
-      puts "File changed or absent: #{to}"
+      puts "Adding asset: #{to}"
       FileUtils.cp from, to
     end 
-  end 
+  end
+  
+  # removes any misc .scss and it's _scss dir along with any .rb files
+  puts "Cleaning up any extra .scss or .rb files that are in /#{output_assets_dir}"
+  FileUtils.remove_dir "#{output_assets_dir}/scss"
 end
 
 task :view => [:copy_assets] do

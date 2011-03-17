@@ -25,3 +25,9 @@ class Nanoc3::Item
     identifier.split("/").last 
   end
 end
+
+# Copy /pres/ directory to /output/pres/ and exclude /_scss/ directory and sass files
+def copy_pres
+  FileUtils.cp_r 'assets/css/.', 'output/assets/css/'
+  FileUtils.cp_r 'assets/js/.', 'output/assets/js/'
+end
