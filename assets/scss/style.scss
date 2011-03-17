@@ -105,7 +105,6 @@ nav {
     visibility: visible !important;
   }
 
-}
 /*------------------------------------------------------------------
 HOMEPAGE
 ------------------------------------------------------------------*/
@@ -216,13 +215,8 @@ HOMEPAGE
   right: 40px;@include box-shadow(rgba(0,0,0,0.2), 3px, 3px, 0px, 0px);
   width: 460px;
   z-index: 2;
-  //h1 {
-    color: #1e2527;
-    font-size: 225%;
-    line-height: 109.5%;
-    margin: 33px 30px 15px;
-    text-shadow: 1px 1px 0px #505c5e
-  }
+  //h1{color:#1e2527;font-size:225%;line-height:109.5%;margin:33px 30px 15px;text-shadow:1px 1px 0px #505c5e}
+
   h1 {
     color: #1e2527;
     font-size: 295%;
@@ -268,9 +262,8 @@ HOMEPAGE
     margin-bottom: 29px;
     padding-top: 25px;@include transition(border,0.4s,ease-in);
   }
-  // div:hover {
-    border-color: rgba(47,58,60,0.8);@include transition(border,0.3s,ease-in);
-  }
+  // div:hover{border-color:rgba(47,58,60,0.8);@include transition(border,0.3s,ease-in);}
+
   h2 {
     font-size: 260%;
     text-shadow: 1px 1px 0px #72512d;
