@@ -1,10 +1,6 @@
 /*------------------------------------------------------------------
 LAYOUT
 ------------------------------------------------------------------*/
-//#container {
-  margin: 0 auto;
-  width: 940px;
-}
 .two-columns {
   clear: both;
   margin-bottom: 30px;
@@ -15,7 +11,16 @@ LAYOUT
   .column-one {
     margin-right: 20px;
   }
-
+}
+.xi{
+  .column-one{
+    float:left;
+    width:70%;
+  }
+  .column-two{
+    float:right;
+    width:28%;
+  }
 }
 .three-columns {
   clear: both;
@@ -28,7 +33,6 @@ LAYOUT
   .column-three {
     margin-right: 0;
   }
-
 }
 .four-columns {
   clear: both;
@@ -41,5 +45,4 @@ LAYOUT
   .column-four, li:last-child {
     margin-right: 0;
   }
-
 }

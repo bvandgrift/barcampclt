@@ -22,8 +22,6 @@ a:hover {
   color: #036;
 }
 
-
-
 /*------------------------------------------------------------------
 HEADER
 ------------------------------------------------------------------*/
@@ -39,6 +37,7 @@ HEADER
   margin-left: -20px;
   width: 327px;
 }
+
 /*------------------------------------------------------------------
 NAVIGATION
 ------------------------------------------------------------------*/
@@ -104,6 +103,7 @@ nav {
     display: block !important;
     visibility: visible !important;
   }
+}
 
 /*------------------------------------------------------------------
 HOMEPAGE
@@ -262,8 +262,6 @@ HOMEPAGE
     margin-bottom: 29px;
     padding-top: 25px;@include transition(border,0.4s,ease-in);
   }
-  // div:hover{border-color:rgba(47,58,60,0.8);@include transition(border,0.3s,ease-in);}
-
   h2 {
     font-size: 260%;
     text-shadow: 1px 1px 0px #72512d;
@@ -429,6 +427,14 @@ HOMEPAGE
   }
 
 }
+
+
+
+
+
+
+
+
 /*------------------------------------------------------------------
 ARTICLE DEFAULTS
 ------------------------------------------------------------------*/
@@ -477,7 +483,6 @@ VENUE
     float: right;
     font-size: 80%;
   }
-
 }
 #venue-map {
   background-color: #fff;
@@ -486,7 +491,6 @@ VENUE
   .inner {
     height: 460px
   }
-
 }
 /*------------------------------------------------------------------
 SCHEDULE
@@ -524,7 +528,6 @@ SCHEDULE
     float: left;
     width: 830px;
   }
-
 }
 /*------------------------------------------------------------------
 FOOTER
@@ -542,10 +545,4 @@ footer {
     margin: 0 auto;
     width: 940px;
   }
-
 }
-
-
-
-
-
