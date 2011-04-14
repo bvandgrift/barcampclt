@@ -1,5 +1,3 @@
-require 'lib/helpers/lorem_ipsum'
-
 module LoremIpsumHelper
   
   # Generates _lorem ipsum_ text, approximately the quantity requested.
