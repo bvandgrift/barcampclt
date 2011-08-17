@@ -1,7 +1,10 @@
-*~
-output
-tmp
 .DS_Store
 .livereload
-.sass-cache/
+.sass-cache
+.sass-cache/*
+Gemfile.lock
+.rvmc
+output
 output.diff
+tmp
+tmp/*

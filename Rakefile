@@ -1,20 +1,19 @@
-begin
-  # Try to require the preresolved locked set of gems.
-  require File.expand_path('../.bundle/environment', __FILE__)
-  rescue LoadError
-  # Fall back on doing an unlocked resolve at runtime.
-  require "rubygems"
-  require "bundler"
-  Bundler.setup
-end
+require 'nanoc3/tasks'
+
+# begin
+#   # Try to require the preresolved locked set of gems.
+#   require File.expand_path('../.bundle/environment', __FILE__)
+#   rescue LoadError
+#   # Fall back on doing an unlocked resolve at runtime.
+#   require "rubygems"
+#   require "bundler"
+#   Bundler.setup
+# end
 
 require 'nanoc3/tasks'
 
 require 'fileutils'
 %w{yaml}.each{|lib| require lib}
-
-# a rake task to copy any css and javascript 
-# files over to the webroot output directory
 
 config  = YAML.load(File.open("config.yaml"))
 
@@ -30,6 +29,11 @@ def path_tree(path,to_copy=[])
     end 
   end 
   tree.flatten
+end
+
+desc "Watches and automatically compiles the site"
+task :auto => :compile do
+  sh "nanoc auto"
 end
 
 desc "Compile SCSS for main files & widgets into CSS"
@@ -68,27 +72,22 @@ task :copy_assets => [:compile_css] do
   FileUtils.remove_dir "#{output_assets_dir}/scss"
 end
 
-task :view => [:copy_assets] do
-  sh "nanoc3 auto"
+desc "Compile static files"
+task :compile do
+  puts "Compiling content."
+  sh "nanoc compile"
 end
 
 task :sync do
-  puts "Syncing site to production."
+  puts "Syncing site to remote home directory"
   sh "rsync -rcv --delete output/ barcamp@startcharlotte:website"
 end
 
-task :compile do
-  puts "Compiling content."
-  sh "nanoc3 co"
-end
-
-desc "Watches and automatically compiles the site"
-task :auto => :compile do
-  sh "nanoc3 aco"
-end
-
-task :build => [:compile, :copy_assets]
+task :build => [:compile_css, :compile]
 
 task :deploy => [:build, :sync]
+
+# task :deploy => [:build, :sync]
+# task :deploy => [:compile, :sync]
 
 task :default => :deploy
