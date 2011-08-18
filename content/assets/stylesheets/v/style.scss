@@ -32,7 +32,7 @@ HEADER
   width: 940px;
 }
 #logo {
-  background-image: url('../images/barcamp-charlotte-logo.png');
+  background-image: url('/assets/_v/images/barcamp-charlotte-logo.png');
   height: 90px;
   margin-left: -20px;
   width: 327px;
@@ -51,7 +51,7 @@ nav {
     width: 100%;
   }
   li {
-    background: url('../images/nav-background.png') top left no-repeat;
+    background: url('/assets/_v/images/nav-background.png') top left no-repeat;
     float: left;
     height: 91;
     margin: 7px 5px;
@@ -63,7 +63,7 @@ nav {
     margin-left: 0px;
   }
   span {
-    background-image: url('../images/nav-sprite.png');
+    background-image: url('/assets/_v/images/nav-sprite.png');
     display: block;
     height: 43px;
     margin: 24px auto 37px;@include opacity(0.5);@include transition(opacity,0.4s,ease-in);
@@ -128,21 +128,21 @@ HOMEPAGE
   }
   .photos {
     a {
-      background-image: url('../images/main-images-blue.jpg');
+      background-image: url('/assets/_v/images/main-images-blue.jpg');
       float: left;
       height: 150px;
       overflow: hidden;
       position: relative;
     }
     .color {
-      background-image: url('../images/main-images-color.jpg');
+      background-image: url('/assets/_v/images/main-images-color.jpg');
       display: block;
       height: 150px;@include opacity(0);
       overflow: hidden;
       position: relative;@include transition(opacity,0.3s,ease-in);
     }
     .enlarge {
-      background-image: url('../images/plus-icon.png');
+      background-image: url('/assets/_v/images/plus-icon.png');
       bottom: 10px;
       display: block;
       height: 35px;@include opacity(0);
@@ -207,7 +207,7 @@ HOMEPAGE
 
 }
 #register-cta {
-  background-image: url('../images/blue-box.png');
+  background-image: url('/assets/_v/images/blue-box.png');
   float: right;
   height: 270px;
   position: relative;
@@ -232,7 +232,7 @@ HOMEPAGE
     text-shadow: 1px 1px 0px #1e2527
   }
   a {
-    background-image: url('../images/red-ribbon.png');
+    background-image: url('/assets/_v/images/red-ribbon.png');
     bottom: -12px;
     color: #632922;
     display: block;
@@ -293,7 +293,7 @@ HOMEPAGE
 }
 /* twitter */
 #twitter {
-  background: #2f3a3c url('../images/blue-background.jpg') top left repeat-x;
+  background: #2f3a3c url('/assets/_v/images/blue-background.jpg') top left repeat-x;
   color: #bdd3d8;
   height: 451px;
   margin-bottom: 40px;
@@ -302,7 +302,7 @@ HOMEPAGE
     color: #bb5549
   }
   h2 {
-    background-image: url('../images/red-ribbon-full.png');
+    background-image: url('/assets/_v/images/red-ribbon-full.png');
     height: 103px;
     margin: 0 auto -70px;
     position: relative;
@@ -323,7 +323,7 @@ HOMEPAGE
     display: none;
   }
   .top,.bottom {
-    background: url('../images/blue-background-edges.png');
+    background: url('/assets/_v/images/blue-background-edges.png');
     display: block;
     height: 8px;
     position: absolute;
