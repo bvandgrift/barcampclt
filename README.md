@@ -2,8 +2,6 @@
 
 This fantastic repo that you see houses the last 3 versions of the BarCamp Charlotte site. In case Ben or Bermon die in a fire, zombies eat our brains, or zombies eat our brains then we die in a fire (more than likely by the hands of an angry, zombie killing mob) it's been made a public. This is how you get it up and running.
 
----
-
 ## Installation
 
 Installation is fairly simple and requires that you at least have Ruby and GIT installed & can finagle your way around a terminal window. If you don't know what those are then ask your nearest developer friend.
@@ -21,8 +19,6 @@ All of the required gems are handled through bundler. Install the bundler gem an
     gem install bundler
     
     bundle install
-
----
 
 ## Usage
 
@@ -45,8 +41,6 @@ Once you have the extension installed you can start up guard in another terminal
     guard start
     
 That's all it takes to get things set up. You can now edit away.
-
----
 
 ## Nifty things used to make the site
 
