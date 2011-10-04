@@ -1,18 +1,18 @@
-/* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+    All the prettiness & front-end: Bermon Painter
+    Site: http://bermonpainter.com
+    Twitter: @bermonpainter
+    Location: Charlotte, NC
 
-/* THANKS */
-  Names (& URL): 
+    Developer and go-to source for infinite Ruby knowledge: Ben Vandgrift
+    Site: http://ben.vandgrift.com
+    Twitter: @bvandgrift
+    Location: Charlotte, NC
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
-  
+    Last Update: 2011/01/10
+    Standards: HTML5, CSS3, Macroformats
+    Components: Modernizr, jQuery, Lettering.js, FitText.js
+    Software: Nanoc, Ruby, Sublime Text 2, LiveReload, OSX

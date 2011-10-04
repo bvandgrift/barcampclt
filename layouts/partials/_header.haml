@@ -1,0 +1,8 @@
+%header{:role => "banner"}
+    .inner
+        - if @item.path == '/'
+            %h1#logo 
+                %img{:src => '#', :alt => "BarCamp Charlotte"}
+        - else
+            %a{:href => '/', :id => "logo"}
+                %img{:src => '#', :alt => "BarCamp Charlotte"}

@@ -32,9 +32,269 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 @import "grid";
 
 
-/* global components - headers, footers, etc */
-/* navigation */
-/* content */
+/* ----------------------------------------------------
+=mobile
+---------------------------------------------------- */
+header{
+	background: #efefef;
+	.inner{
+		padding: 10px 5% 0;
+	}
+	#logo{
+		img{
+			width: 100%;	
+		}
+	}
+}
+// =navigation
+// We want the navigation to appear after the content but
+// render above all of the content except for the homepage
+#main-nav {
+	clear: both;
+	margin: 0 5% 5%;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		display: block;
+		margin-bottom: -1px;
+		&:first-child a{
+			@include border-top-radius(8px);
+		}
+		&:last-child a{
+			@include border-bottom-radius(8px);
+		}
+	}
+	a{
+		background-color: #efefef;
+		border: 1px solid #ccc;
+		display: block;
+		padding: 8px 16px;
+	}
+}
+// =common
+article{
+	margin: 0 5%;
+	h1, h2, h3{
+		margin-bottom: .2em;
+	}
+}
+.button, button{
+	background-color: #ccc;
+	border: 0px;
+	@include border-radius(8px);
+	display: block;
+	font-size: 1em;
+	line-height: 2.8em;
+	margin: 0 0 5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.herobanner{
+	header{
+		margin-bottom: 40px;
+		min-height: 200px;
+	}
+	.banner{
+		background-color: #ccc;
+		margin-top: -190px;
+		min-height: 200px;
+		width: 100%;
+	}
+}
+
+footer{
+	background-color: #ccc;
+	clear: both;
+	margin-top: 40px;
+	padding: 20px 5%;
+	small{
+		font-size: .8em;
+	}
+	// sponsors, gotta reset the grid
+	.xxx{
+		a{
+			background-color: #fff;
+			margin-bottom: 1.695%;
+			@include columns(6);
+			&:nth-child(3n){
+				@include omega(6);
+			}
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.xxxx{
+		a{
+			background-color: #fff;
+			margin-bottom: 1.695%;
+			@include columns(4);
+			&:nth-child(4n){
+				@include omega(4);
+			}
+		}
+		img{
+			width: 100%;	
+		}
+	}
+}
+// =homepage
+#homepage {
+	header{
+		margin-bottom: 90px;
+		min-height: 225px;
+	}
+	position: relative;
+	#main-nav{
+		position: absolute;
+			top: 90px;
+		width: 90%;
+		.home{
+			display: none;
+		}
+		.venue a{
+			@include border-top-radius(8px);
+		}
+	}
+	#intro, .slider, .photos{
+		display: none;
+	}
+	#quick-details{
+		.col1, .col2, .col3 {
+			float: none;
+			width: 100%;
+		}
+	}
+	.event{
+		.url, .category{
+			display: none;
+		}
+		b{
+			border-bottom: 1px solid #efefef;
+			display: block;
+			margin: .5em 0 .2em;
+			padding-bottom: .2em;
+		}
+		.org, .street-address{
+			display: block;
+		}
+	}
+
+}
+
+#venue{
+	.org{
+		display: none;
+	}
+	article{
+		.col1, .col2, .col3{
+			float: none;
+			width: 100%;
+		}
+	}
+}
+
+#schedule{
+	article{
+		.time {
+			color: #555;
+			font-family: "Terminal Dosis";
+			font-size: 1.6em;
+		}
+		ul{
+			clear: both;
+			list-style: none;
+			& > li{
+				border-top: 1px solid #efefef;
+				list-style: none;
+				margin-bottom: .5em;
+				padding: .5em 0;
+				&:first-child{
+					border-top: 0px;
+					padding-top: 0;
+				}
+			}
+		}
+		ul ul{
+			display: none
+		}
+	}
+}
+
+#sponsor{
+	article{
+		.xxxxx{
+			margin-bottom: 1.5em
+		}
+	}
+	form{
+		border-top: 1px solid #efefef;
+		padding: .5em 0 0 65px;
+		margin: 0;
+		position: relative;
+		&:first-child{
+			border-top: 0px;
+			padding-top: 0;
+		}
+		fieldset{
+			margin-bottom: .5em;
+		}
+		label {
+			color: #555;
+			font-family: "Terminal Dosis";
+			font-size: 1.6em;
+		}
+		img{
+			background-color: #ccc;
+			@include border-radius(55px);
+			height: 55px;
+			position: absolute;
+			top: .5em;
+			left: 0;
+			width: 55px;
+		}
+		button{
+			padding: 0 20px;
+			position: absolute;
+				top: 1em;
+				right: 0;
+		}
+	}
+	#sponsor-details{
+		display: none;
+	}
+	.org, .street-address{
+		display: block;
+	}
+}
+
+#volunteer{
+	ul li{
+		list-style: none;
+	}
+	article {
+		.xxx{
+			.col1, .col2, .col3{
+				clear: both;
+				float: none;
+				margin-right: 0;
+				width: 100%;
+			}
+			img{
+				background-color: #ccc;
+				height: 50px;
+				float: left;
+				margin: 0 .5em 0 0;
+				width: 50px;
+			}
+		}
+		h3 a{
+			font-size: .8em;
+		}
+	}
+}
 
 /* ----------------------------------------------------
 =media queries

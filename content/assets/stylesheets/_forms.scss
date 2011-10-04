@@ -126,26 +126,6 @@ textarea {
     padding : 2px;
 }
 
-button {
-    background-color : rgb(227,227,227);
-    border : 1px solid rgb(204,204,204);
-    border-bottom-color : rgb(187,187,187);
-    color : rgb(51,51,51);
-    font-size : .875em;
-    font-weight: bold;
-    line-height : 1;
-    overflow : visible;
-    padding : 8px 12px 9px;
-    text-align : center;
-    text-shadow : 0 1px 0 rgb(255,255,255);
-    width : auto;
-}
-
-button:hover {
-    background-color : rgb(217,217,217);
-    cursor : pointer;
-}
-
 .ie6 legend,
 .ie7 legend {
     margin-left : -7px;

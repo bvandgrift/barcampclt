@@ -46,5 +46,5 @@ data_sources:
 # basic settings for Google Analytics. 
 # Used in '/layouts/partials/_bottom.haml'
 analytics:
-    domain: example.com
-    id:     UA-XXXXX-X
+    domain: barcampclt.org
+    id:     UA-798946-28

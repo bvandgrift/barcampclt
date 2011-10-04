@@ -1,0 +1,51 @@
+%nav#main-nav{:role => "navigation"}
+    %ul
+        %li.home{ :class => ("active" if @item.path == '/') }
+            %a{:href => "/"} Home
+        %li.venue{ :class => ("active" if @item.path == '/venue/') }
+            %a{:href => "/venue/"} Venue
+        %li.schedule{ :class => ("active" if @item.path == '/schedule/') }
+            %a{:href => "/schedule/"} Schedule
+        %li.sponsor{ :class => ("active" if @item.path == '/sponsor/') }
+            %a{:href => "/sponsor/"} Sponsor
+        %li.volunteer{ :class => ("active" if @item.path == '/volunteer/') }
+            %a{:href => "/volunteer/"} Volunteer
+        %li.register
+            %a{:href => "http://barcampcharlotte6.eventbrite.com/"} Register
+
+%footer
+    .inner
+        %section#main-sponsors.xxx
+            %a.col1{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col2{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col3{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col1{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col2{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col3{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+        %section#secondary-sponsors.xxxx
+            %a.col1{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col2{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col3{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col4{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col1{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col2{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col3{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+            %a.col4{:href => "#", :title => ""}
+                %img{:src => "", :alt => ""}
+        
+        %small
+            %p 
+            Website powered by <a href="http://nanoc.stoneship.org/" rel="external">nanoc</a>. Designed and developed by <a href="http://bermonpainter.com" rel="external">Bermon Painter</a> and <a href="http://startcharlotte.com/" rel="external">Start Charlotte</a>.

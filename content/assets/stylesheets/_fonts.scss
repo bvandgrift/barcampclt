@@ -1,3 +1,51 @@
 /* ----------------------------------------------------
 =fonts
 ---------------------------------------------------- */
+// Used for headings
+@font-face {
+    font-family: 'Terminal Dosis';
+    src: url('/assets/fonts/terminaldosis-bold.eot');
+    src: url('/assets/fonts/terminaldosis-bold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/terminaldosis-bold.woff') format('woff'),
+         url('/assets/fonts/terminaldosis-bold.ttf') format('truetype'),
+         url('/assets/fonts/terminaldosis-bold.svg#TerminalDosisBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Terminal Dosis';
+    src: url('/assets/fonts/terminaldosis-semibold.eot');
+    src: url('/assets/fonts/terminaldosis-semibold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/terminaldosis-semibold.woff') format('woff'),
+         url('/assets/fonts/terminaldosis-semibold.ttf') format('truetype'),
+         url('/assets/fonts/terminaldosis-semibold.svg#TerminalDosisSemiBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Body content
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/assets/fonts/opensans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/assets/fonts/opensans-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/assets/fonts/opensans-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/assets/fonts/opensans-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

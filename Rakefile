@@ -33,43 +33,15 @@ end
 
 desc "Watches and automatically compiles the site"
 task :auto => :compile do
-  sh "nanoc auto"
+  sh "nanoc auto --handler thin"
 end
 
 desc "Compile SCSS for main files & widgets into CSS"
 task :compile_css do
   puts "Compliling SCSS into CSS"
   # compile the sites main CSS
-  sh "compass compile --output-style compressed --force"
+  sh "compass compile --output-style expanded --force"
   # compiles the CSS for past site versions
-  sh "compass compile --sass-dir assets/_iv/scss/ --css-dir assets/_iv/css/ --output-style compressed --force"
-end
-
-task :copy_assets => [:compile_css] do
-  output_assets_dir = [config["output_dir"],config["assets_dir"]].join("/")
-  
-  puts "Copying assets from '/#{config['assets_dir']}' to '/#{config['output_assets_dir']}'"
-  
-  # copies files from /assets to /output/assets
-  path_tree(config['assets_dir']).each do |asset|
-    target = asset.gsub(/#{config['assets_dir']}\//, '')
-    
-    from  = asset
-    to    = [config["output_dir"],config["assets_dir"],target].join("/")
-    
-    if !File.exist?(File.dirname(to))
-      FileUtils.mkdir_p(File.dirname(to))
-    end
-    
-    if !File.exist?(to) || !FileUtils.compare_file(from,to)
-      puts "Adding asset: #{to}"
-      FileUtils.cp from, to
-    end 
-  end
-  
-  # removes any misc .scss and it's _scss dir along with any .rb files
-  puts "Cleaning up any extra .scss or .rb files that are in /#{output_assets_dir}"
-  FileUtils.remove_dir "#{output_assets_dir}/scss"
 end
 
 desc "Compile static files"

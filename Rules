@@ -39,6 +39,26 @@ preprocess do
 end
 
 # ----------------------------------------------------------------------
+# compile & route files without generating an extra directory
+# ----------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# robots.txt & humans.txt files
+# ----------------------------------------------------------------------
+compile 'humans' do
+  layout 'plaintext'
+end
+route 'humans' do
+  item.identifier.chop + '.txt'
+end
+
+compile 'robots' do
+  layout 'plaintext'
+end
+route 'robots' do
+  item.identifier.chop + '.txt'
+end
+
+# ----------------------------------------------------------------------
 # previous years stylesheets
 # BarCamp IV, V
 # ----------------------------------------------------------------------
@@ -87,12 +107,6 @@ route '/assets/stylesheets/*/' do
     item.identifier.chop + '.css'
 end
 
-
-# ----------------------------------------------------------------------
-# robots.txt & humans.txt files
-# ----------------------------------------------------------------------
-
-
 # ----------------------------------------------------------------------
 # previous content
 # BarCamp IV, V
@@ -107,7 +121,7 @@ compile 'iv/*' do
     filter :haml, HAML_OPTIONS
   elsif ext == 'md' || ext == 'markdown'
     filter :erb
-    filter :kramdown
+    filter :bluecloth
   else
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
@@ -125,7 +139,7 @@ compile 'v/*' do
     filter :haml, HAML_OPTIONS
   elsif ext == 'md' || ext == 'markdown'
     filter :erb
-    filter :kramdown
+    filter :bluecloth
   else
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
@@ -151,7 +165,7 @@ compile '*' do
         filter :haml
     elsif ext == 'md' || ext == 'markdown'
         filter :erb
-        filter :rdiscount
+        filter :bluecloth
     elsif ext == 'html'
 
     elsif ext == 'txt'
