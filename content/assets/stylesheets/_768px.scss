@@ -2,5 +2,39 @@
 =768px
 ---------------------------------------------------- */
 @media only screen and (min-width: 768px) {
+	header{
+		background: red;
+		#logo{
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 50%;
+			}
+		}
+	}
+	#main-nav{
+		text-align: center;
+		ul{
+			margin: 0 auto;
+		}
+		li{
+			display: inline-block;
+			margin: 0;
+			&:first-child a{
+				@include border-top-radius(none);
+				border-left: 0px;
+			}
+			&:last-child a{
+				@include border-bottom-radius(none);
+			}
+		}
+		a{
+			background-color: transparent;
+			border-left: 1px solid #ccc;
+			padding: 0 10px;
+		}
+	}
 
+	//=homepage
+	#homepage{}
 }

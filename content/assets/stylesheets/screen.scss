@@ -41,8 +41,9 @@ header{
 		padding: 10px 5% 0;
 	}
 	#logo{
+		text-align: center;
 		img{
-			width: 100%;	
+			width: 340px;	
 		}
 	}
 }
@@ -143,13 +144,13 @@ footer{
 // =homepage
 #homepage {
 	header{
-		margin-bottom: 90px;
-		min-height: 225px;
+		margin-bottom: 80px;
+		min-height: 280px;
 	}
 	position: relative;
 	#main-nav{
 		position: absolute;
-			top: 90px;
+			top: 140px;
 		width: 90%;
 		.home{
 			display: none;
@@ -300,9 +301,9 @@ footer{
 =media queries
 print, 480px, 768px, 992px, 1392px, 2x-retina
 ---------------------------------------------------- */
-@import "print";
-@import "480px";
-@import "768px";
-@import "992px";
-@import "1382px";
-@import "2x-retina";
+// @import "print";
+// @import "480px";
+// @import "768px";
+// @import "992px";
+// @import "1382px";
+// @import "2x-retina";
