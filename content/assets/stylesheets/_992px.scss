@@ -2,7 +2,16 @@
 =992px
 ---------------------------------------------------- */
 @media only screen and (min-width: 992px) {
+	header .inner,
+	footer .inner{
+		margin: 0 auto;
+		max-width: 1382px;
+	}
+	article {
+		margin: 0 auto;
+		max-width: 1024px;
+	}
 	header{
-		background: #666;
+		background: blue;
 	}
 }

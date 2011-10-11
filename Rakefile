@@ -33,7 +33,7 @@ end
 
 desc "Watches and automatically compiles the site"
 task :auto => :compile do
-  sh "nanoc auto --handler thin"
+  sh "nanoc aco --handler thin"
 end
 
 desc "Compile SCSS for main files & widgets into CSS"
