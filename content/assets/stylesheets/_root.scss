@@ -2,13 +2,13 @@
 =root
 ---------------------------------------------------- */
 html {
-    background-color: #fff;
+    background: $color-bg;
     overflow-y: scroll;
 }
 
 body {
     background-color: transparent;
-    color: rgb(40,40,40);
+    color: $color-text;
     font: 100%/1.4 "Open Sans", Arial, Sans;
     margin: 0 auto;
     padding: 0;

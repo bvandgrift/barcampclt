@@ -1,0 +1,15 @@
+!!!
+%html{:lang => "en", :class => "no-js"}
+    %head
+        = render "06/partials/_head"
+    %body{:id => "#{@item[:bodyID]}", :class => "#{@item[:bodyClasses]}"}
+        = render "06/partials/_header"
+        
+        #container
+            .inner
+                %article{:role => "main"}
+                    = yield
+                = render "06/partials/_nav"
+            
+        = render "06/partials/_footer"
+        = render "06/partials/_bottom"

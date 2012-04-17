@@ -1,0 +1,59 @@
+/* ----------------------------------------------------
+=1140px
+---------------------------------------------------- */
+@media only screen and (min-width: 1140px) {
+	header .inner,
+	footer .inner{
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#container{
+		margin: 0 0;
+		position: relative;
+		.inner{
+			max-width: 1140px;
+			margin: 0 auto;
+			position: relative;
+		}
+	}
+	#main-nav{
+		right: 5%;
+		top: -65px;
+		ul{
+			margin: 0;
+			text-align: right;
+		}
+		li{
+			width: auto;
+			&:last-child a{
+				padding-right: 0;
+			}
+		}
+		a{
+			padding: 0 25%;
+		}
+	}
+
+
+	#homepage{
+		#main-nav{
+			right: 5%;
+			top: -213px;
+			ul{
+				margin: 0;
+				text-align: right;
+			}
+			li{
+				width: auto;
+				&:last-child a{
+					padding-right: 0;
+				}
+			}
+			a{
+				padding: 0 25%;
+			}
+		}
+
+	}
+}

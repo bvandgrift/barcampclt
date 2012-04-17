@@ -1,0 +1,47 @@
+--- 
+nav: venue
+title: Venue @ Area 15
+---
+%article#venue.clearfix
+  %h1 Venue
+  %section#map
+    %a.vcard{:href => "http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=516+East+15th+Street+Charlotte,+NC+28206+USA&amp;sll=37.0625,-95.677068&amp;sspn=56.375007,74.443359&amp;ie=UTF8&amp;hq=&amp;hnear=516+E+15th+St,+Charlotte,+Mecklenburg,+North+Carolina+28206&amp;z=17", :rel => "external"}
+      %span.adr
+        %span.street-address 516 East 15th Street
+        = succeed "," do
+          %span.locality Charlotte
+        %abbr.region{:title => "North Carolina"} NC
+        %span.postal-code 28206
+        %abbr.country-name{:title => "United States of America"} USA
+    .gps Latitude: 35.23259758788463, Longitude: -80.8254611492157
+    #venue-map
+      .inner
+      .layers
+  / END #map
+  .three-columns
+    %section.column-one
+      %h2 About Area 15
+      %p Area Fifteen is the 23,000 sq ft idea incubator located in the heart of Optimist Park at 15th St and Davidson. Serving as the host venue since BarCamp Charlotte's inception, Area Fifteen is the home to small businesses, non-profits (including the Free Store and Trips for Kids Bike Co-op) and other creative endeavors.
+      %p
+        See the current tenants at
+        %a{:href => "http://www.areafifteen.com", :rel => "external"} http://www.areafifteen.com
+    %section.column-two
+      %h2 Directions
+      %p Coming soon...
+    %section.column-three
+      %h2 Parking
+      %p We encourage you to carpool, ride a bike or take public transit.
+      %p If you're driving in please avoid parking on the sides of the streets. It can get a little tight
+      %ul
+        %li
+          %b> Parking lot 1:
+          Green lot in front of Area 15
+        %li
+          %b> Parking lot 2:
+          Empty lot across the street
+        %li
+          %b> Parking lot 3:
+          Church lot on 15th and Caldwell
+      %p If you're taking the bus use routes 3 &amp; 23.
+  / END three-columns
+/ END venue

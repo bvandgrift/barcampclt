@@ -1,51 +1,5 @@
-%nav#main-nav{:role => "navigation"}
-    %ul
-        %li.home{ :class => ("active" if @item.path == '/') }
-            %a{:href => "/"} Home
-        %li.venue{ :class => ("active" if @item.path == '/venue/') }
-            %a{:href => "/venue/"} Venue
-        %li.schedule{ :class => ("active" if @item.path == '/schedule/') }
-            %a{:href => "/schedule/"} Schedule
-        %li.sponsor{ :class => ("active" if @item.path == '/sponsor/') }
-            %a{:href => "/sponsor/"} Sponsor
-        %li.volunteer{ :class => ("active" if @item.path == '/volunteer/') }
-            %a{:href => "/volunteer/"} Volunteer
-        %li.register
-            %a{:href => "http://barcampcharlotte6.eventbrite.com/"} Register
-
 %footer
     .inner
-        %section#main-sponsors.xxx
-            %a.col1{:href => "http://macquarium.com/", :title => "Macquarium User Experience Consultancy", :rel => "external"}
-                %img{:src => "/assets/images/sponsors/macquarium.png", :alt => "Macquarium Intelligent Communications"}
-            %a.col2{:href => "http://skookum.com/", :title => "Skookum - Custom Business Software", :rel => "external"}
-                %img{:src => "/assets/images/sponsors/skookum.png", :alt => "Skookum Digital Works"}
-            %a.col3{:href => "http://areafifteen.com", :title => "Area 15 - Charlotte business incubator"}
-                %img{:src => "/assets/images/sponsors/area15.png", :alt => "Area Fifteen"}
-            -# %a.col1{:href => "/sponsor/", :title => ""}
-            -#     %img{:src => "/assets/images/sponsors/placeholder.png", :alt => ""}
-            -# %a.col2{:href => "/sponsor/", :title => ""}
-            -#     %img{:src => "/assets/images/sponsors/placeholder.png", :alt => ""}
-            -# %a.col3{:href => "/sponsor/", :title => ""}
-            -#     %img{:src => "/assets/images/sponsors/placeholder.png", :alt => ""}
-        %section#secondary-sponsors.xxxx
-            %a.col1{:href => "http://www.ephricon.com/", :title => "Ephircon - Charlotte SEO Agency & Internet Marketing", :rel => "external"}
-                %img{:src => "/assets/images/sponsors/ephricon-web-marketing.png", :alt => "Ephricon Web Marketing"}
-            %a.col2{:href => "http://www.cpcc.edu/", :title => "Central Piedmont Community College"}
-                %img{:src => "/assets/images/sponsors/cpcc.png", :alt => "Central Piedmont Community College"}
-            %a.col3{:href => "http://www.cpcc.edu/thegeekfest", :title => "The Geekfest"}
-                %img{:src => "/assets/images/sponsors/geekfest.png", :alt => "The Geekfest"}
-            %a.col4{:href => "http://www.redf.com/packard/", :title => "Packard Place"}
-                %img{:src => "/assets/images/sponsors/packard-place.png", :alt => "Packard Place"}
-            %a.col1{:href => "http://www.addshoppers.com/", :title => "Add Shoppers - Social Commerce Platform for Retailers"}
-                %img{:src => "/assets/images/sponsors/add-shoppers.png", :alt => "Add Shoppers"}
-            %a.col2{:href => "/sponsor/", :title => ""}
-                %img{:src => "/assets/images/sponsors/placeholder.png", :alt => ""}
-            %a.col3{:href => "/sponsor/", :title => ""}
-                %img{:src => "/assets/images/sponsors/placeholder.png", :alt => ""}
-            %a.col4{:href => "/sponsor/", :title => ""}
-                %img{:src => "/assets/images/sponsors/placeholder.png", :alt => ""}
-        
         %small
             %p 
             Website powered by <a href="http://nanoc.stoneship.org/" rel="external">nanoc</a>. Designed and developed by <a href="http://bermonpainter.com" rel="external">Bermon Painter</a> and <a href="http://startcharlotte.com/" rel="external">Start Charlotte</a>.

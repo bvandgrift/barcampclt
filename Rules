@@ -60,27 +60,34 @@ end
 
 # ----------------------------------------------------------------------
 # previous years stylesheets
-# BarCamp IV, V
+# BarCamp 4, 5, 6
 # ----------------------------------------------------------------------
 # IV
-compile '/assets/stylesheets/iv/*/' do
+compile '/assets/stylesheets/04/*/' do
     filter :sass, Compass.sass_engine_options
 end
-route '/assets/stylesheets/iv/*/' do
+route '/assets/stylesheets/04/*/' do
     item.identifier.chop + '.css'
 end
 
 # V
-compile '/assets/stylesheets/v/_*/' do
+compile '/assets/stylesheets/05/_*/' do
 end
-route '/assets/stylesheets/v/_*/' do
+route '/assets/stylesheets/05/_*/' do
     nil
 end
 
-compile '/assets/stylesheets/v/*/' do
+compile '/assets/stylesheets/05/*/' do
     filter :sass, Compass.sass_engine_options
 end
-route '/assets/stylesheets/v/*/' do
+route '/assets/stylesheets/05/*/' do
+    item.identifier.chop + '.css'
+end
+
+compile '/assets/stylesheets/06/*/' do
+    filter :sass, Compass.sass_engine_options
+end
+route '/assets/stylesheets/06/*/' do
     item.identifier.chop + '.css'
 end
 
@@ -109,9 +116,9 @@ end
 
 # ----------------------------------------------------------------------
 # previous content
-# BarCamp IV, V
+# BarCamp 4, 5, 6
 # ----------------------------------------------------------------------
-compile 'iv/*' do
+compile '04/*' do
   # item[:extension] returns 'html.erb' for multi-dotted filename
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
   
@@ -126,10 +133,10 @@ compile 'iv/*' do
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
   
-  layout '_iv/default' unless item[:layout] == "none"
+  layout '04/default' unless item[:layout] == "none"
 end
 
-compile 'v/*' do
+compile '05/*' do
   # item[:extension] returns 'html.erb' for multi-dotted filename
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
   
@@ -144,7 +151,25 @@ compile 'v/*' do
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
   
-  layout '_v/default' unless item[:layout] == "none"
+  layout '05/default' unless item[:layout] == "none"
+end
+
+compile '06/*' do
+  # item[:extension] returns 'html.erb' for multi-dotted filename
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+  
+  if ext == 'erb'
+    filter :erb
+  elsif ext == 'haml' || ext.nil?
+    filter :haml, HAML_OPTIONS
+  elsif ext == 'md' || ext == 'markdown'
+    filter :erb
+    filter :bluecloth
+  else
+    raise "Filter is not configured for #{item.identifier} in Rules file."
+  end
+  
+  layout '06/default' unless item[:layout] == "none"
 end
 
 # ----------------------------------------------------------------------

@@ -35,13 +35,16 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 =mobile
 ---------------------------------------------------- */
 header{
-	background: #efefef;
+	background: $color-bg-alt;
+	border-top: $baseline solid $color-accent;
+	color: $color-text-alt;
 	.inner{
-		padding: 10px 5% 0;
+		padding: $baseline * 2 5% 0;
 	}
 	#logo{
-		text-align: center;
 		img{
+			display: block;
+			margin: 0 auto;
 			width: 260px;	
 		}
 	}
@@ -67,10 +70,14 @@ header{
 		}
 	}
 	a{
-		background-color: #efefef;
-		border: 1px solid #ccc;
+		background-color: $color-bg-alt;
+		border: 1px solid darken($color-bg-alt, 10%);
+		@include box-shadow(darken($color-bg-alt, 5%) 0 0 20px 0 inset);
+		color: $color-text-alt;
 		display: block;
 		padding: 8px 16px;
+		text-align: center;
+		text-decoration: none;
 	}
 }
 // =common
@@ -80,16 +87,26 @@ article{
 		margin-bottom: .2em;
 	}
 }
-.button, button{
-	background-color: #ccc;
-	border: 0px;
+a.button, button{
+	@include background(linear-gradient($color-accent, darken($color-accent, 15%)));
+	background-color: $color-accent;
+	border: 1px solid darken($color-accent, 10%);
 	@include border-radius(8px);
+	@include box-shadow(lighten($color-accent, 5%) 0 1px 0 0 inset);
+	color: $color-text-alt;
 	display: block;
 	font-size: 1em;
 	line-height: 2.8em;
 	margin: 0 0 5%;
 	text-align: center;
+	text-decoration: none;
 	text-transform: uppercase;
+	&:hover{
+		@include background(linear-gradient(lighten($color-accent, 5%), darken($color-accent, 10%)));
+	}
+	&:active {
+		@include background(linear-gradient(darken($color-accent, 10%), lighten($color-accent, 5%)));	
+	}
 }
 .herobanner{
 	header{
@@ -98,18 +115,24 @@ article{
 	}
 	.banner{
 		background-color: #ccc;
-		margin-top: -190px;
+		margin-top: -120px;
 		min-height: 200px;
 		width: 100%;
-	}
+		img{
+			width: 100%;
+		}
+	}	
 }
 
 footer{
-	background-color: #ccc;
+	background: $color-bg-alt;
 	clear: both;
+	color: $color-text-alt;
 	margin-top: 40px;
-	padding: 20px 5%;
+	padding: 10px 5% 20px;
 	small{
+		clear: both;
+		display: block;
 		font-size: .8em;
 	}
 	// sponsors, gotta reset the grid
@@ -143,22 +166,11 @@ footer{
 // =homepage
 #homepage {
 	header{
-		margin-bottom: 80px;
+		margin-bottom: 20px;
 		min-height: 280px;
 	}
 	position: relative;
-	#main-nav{
-		position: absolute;
-			top: 140px;
-		width: 90%;
-		.home{
-			display: none;
-		}
-		.venue a{
-			@include border-top-radius(8px);
-		}
-	}
-	#intro, .slider, .photos{
+	.slider, .photos{
 		display: none;
 	}
 	#quick-details{
@@ -172,7 +184,7 @@ footer{
 			display: none;
 		}
 		b{
-			border-bottom: 1px solid #efefef;
+			border-bottom: 1px solid lighten($color-bg-alt, 50%);
 			display: block;
 			margin: .5em 0 .2em;
 			padding-bottom: .2em;
@@ -207,7 +219,7 @@ footer{
 			clear: both;
 			list-style: none;
 			& > li{
-				border-top: 1px solid #efefef;
+				border-top: 1px solid lighten($color-bg-alt, 50%);
 				list-style: none;
 				margin-bottom: .5em;
 				padding: .5em 0;
@@ -218,7 +230,13 @@ footer{
 			}
 		}
 		ul ul{
-			display: none
+			display: block;
+			.speaker, .details{
+				display: none;
+			}
+			.col1, .col2, .col3{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -230,8 +248,8 @@ footer{
 		}
 	}
 	form{
-		border-top: 1px solid #efefef;
-		padding: .5em 0 0 65px;
+		border-top: 1px solid lighten($color-bg-alt, 50%);
+		padding: .5em 0 0 0;
 		margin: 0;
 		position: relative;
 		&:first-child{
@@ -300,9 +318,9 @@ footer{
 =media queries
 print, 480px, 768px, 992px, 1392px, 2x-retina
 ---------------------------------------------------- */
-// @import "print";
-// @import "480px";
-// @import "768px";
-// @import "992px";
-// @import "1382px";
+@import "print";
+@import "480px";
+@import "768px";
+@import "992px";
+@import "1140px";
 // @import "2x-retina";

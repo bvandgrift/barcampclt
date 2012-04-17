@@ -1,0 +1,51 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title= @item[:title]
+
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+
+    %link{:href => "/assets/04/images/favicon.ico", :rel => "shortcut icon"}
+    %link{:href => "/assets/04/images/apple-touch-icon.png", :rel => "apple-touch-icon"}
+
+    %link{:href => "/assets/stylesheets/iv/style.css?v=1", :rel => "stylesheet"}
+
+    / For the less-enabled mobile browsers like Opera Mini
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+
+    / jQuery linked from Google = faster &amp; possibly already in users cache
+
+    %script{:src => "/assets/04/js/plugins.js"}    
+    %script{:src => "http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAxvRN4nyyS2uXyutgQjKkTBTMKujcmyxXngLwgMQwWZLE1rES7RS0vLDfXzDR7kSehc924whAQmT45w", :type => "text/javascript"}
+    %script{:src => "/assets/04/js/jquery.googlemaps.js"}
+
+
+    %script{:src => "/assets/04/js/modernizr-1.5.min.js"}
+
+    / Modernizr enables HTML5 elements &amp; feature detects
+    %script{:src => "/assets/04/js/script.js"}
+      
+  %body#iv
+    #container
+      = render '04/partials/header'
+      = render '04/partials/navigation'
+      
+      = yield
+
+      = render '04/partials/footer'
+    / END #container
+
+    :javascript
+        var _gaq = [['_setAccount', 'UA-798946-28'], ['_trackPageview']];
+        (function(d, t) {
+            var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+            g.async = true;
+            g.src = '//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s);
+        })(document, 'script');
+    

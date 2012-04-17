@@ -1,0 +1,108 @@
+/*------------------------------------------------------------------
+SETUP
+------------------------------------------------------------------*/
+/*
+Light Blue = #4aa3b3
+Dark Blue = #2f3a3c
+Cream = #f4f3de
+Brown = #996d3e
+Red = #bb5549
+
+*/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #996d3e url('/assets/_v/images/background.jpg') top left;
+  font-family: Junction, Helvetica;
+}
+body, select, input, textarea {
+  color: #f4f3de;
+}
+
+/* headers */
+h1,h2,h3,h4,h5,h6 {
+  font-family: Chunk, Georgia;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+strong, th {
+  font-weight: bold;
+}
+
+/* lists */
+ul {
+  margin-left: 30px;
+}
+ol {
+  margin-left: 30px;
+  list-style-type: decimal;
+}
+
+/* misc */
+small {
+  font-size: 85%;
+}
+td, td img {
+  vertical-align: top;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+pre {
+  padding: 15px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+
+
+/* highlight & selected text */
+::-moz-selection {
+  background: #4aa3b3;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #4aa3b3;
+  color: #fff;
+  text-shadow: none;
+}
+a:link {
+  -webkit-tap-highlight-color: #4aa3b3;
+}
+
+/* images */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* non-semantic helper classes */
+.ir {
+  display: block;
+  text-indent: -9999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.invisible {
+  visibility: hidden;
+}
+.amp {
+  font-family: Guanine !important;
+}

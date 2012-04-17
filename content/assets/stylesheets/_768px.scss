@@ -1,33 +1,25 @@
+
 /* ----------------------------------------------------
 =768px
 ---------------------------------------------------- */
 @media only screen and (min-width: 768px) {
 	header{
-		background-color: red;
-		margin-bottom: 0;
 		min-height: auto;
 		padding-bottom: 120px;
-		#logo{
-			margin-bottom: 1.3em;
-		}
 	}
 	#main-nav{
-		top: 110px;
-		.venue a{
-			@include border-top-radius(0);
-		}
-	}
-	#main-nav{
-		text-align: center;
+		margin: 0;
 		position: absolute;
 			top: 110px;
-		width: auto;
+		width: 100%;
+		text-align: center;
 		ul{
 			margin: 0 auto;
 		}
 		li{
 			display: inline-block;
 			margin: 0;
+			width: 15%;
 			&:first-child a{
 				@include border-top-radius(0);
 				border-left: 0px;
@@ -37,9 +29,11 @@
 			}
 		}
 		a{
+			@include background(none);
 			background-color: transparent;
 			border: 0;
-			padding: 0 10px;
+			@include box-shadow(none);
+			padding: 0 5%;
 		}
 	}
 
@@ -100,6 +94,8 @@
 		}
 		#main-nav{
 			top: 110px;
+			margin: 0;
+			width: 100%;
 			.venue a{
 				@include border-top-radius(0);
 			}

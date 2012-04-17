@@ -12,9 +12,33 @@ $colorLinkAlt:          #d2c58a; // tan
 $colorAccent:           #650360; // Ally purple
 $colorAccentDark:       #480145; // Ally Dark Purple
 $colorAccentAlt:        #2c1262; // BLueish Purple                        
-                        
+
 $cornerRadius:          10px;
 $cornerRadiusAlt:       4px;
 $colorBorders:          #e3e3e3;
                         
 $containerWidth:        960px;
+
+// --------------------------------------------------------
+// new variables
+// --------------------------------------------------------
+$red:               #c3402b;
+$dark-gray:         #222222;
+$yellow:            #e9be12;
+$light-gray:        #e7e6d9;
+$light-gray-alt:    #c9c8b5;
+
+$color-text:        $dark-gray;
+$color-text-alt:    $light-gray;
+
+$color-bg:          $light-gray;
+$color-bg-alt:      $dark-gray;
+
+$color-accent:      $red;
+$color-accent-alt:  $yellow;   
+
+$baseline:          5px;
+$corner-radius:     $baseline * 2;
+$corner-radius-alt: $baseline;
+
+$container-width:   960px;

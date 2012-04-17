@@ -1,0 +1,129 @@
+@import "compass"; 
+
+@import "setup"; 
+
+@import "susy"; 
+
+/* ----------------------------------------------------
+=768px
+---------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+	header{
+		min-height: auto;
+		padding-bottom: 120px;
+	}
+	#main-nav{
+		margin: 0;
+		position: absolute;
+			top: 110px;
+		width: 100%;
+		text-align: center;
+		ul{
+			margin: 0 auto;
+		}
+		li{
+			display: inline-block;
+			margin: 0;
+			width: 15%;
+			&:first-child a{
+				@include border-top-radius(0);
+				border-left: 0px;
+			}
+			&:last-child a{
+				@include border-bottom-radius(0);
+			}
+		}
+		a{
+			background-color: transparent;
+			border: 0;
+			padding: 0 5%;
+		}
+	}
+
+	.herobanner{
+		header{
+			margin-bottom: 40px;
+			min-height: 200px;
+		}
+		.banner{
+			background-color: #ccc;
+			margin-top: -190px;
+			min-height: 200px;
+			width: 100%;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+
+	// photo gallery
+	.photos{
+		li{
+			background-color: #fff;
+			margin-bottom: 1.695%;
+		}
+		img{
+			background-color: #000;
+			display: block;
+			width: 100%;
+		}
+	}
+
+	// slider
+	.slider{
+		//overflow: hidden;
+		.slide-wrapper {
+			// width: 5000px;
+		}
+		.slide{
+			
+		}
+		img{
+			width: 100%;
+		}
+	}
+
+	//=homepage
+	#homepage{
+		header{
+			margin-bottom: 0;
+			min-height: auto;
+			padding-bottom: 120px;
+			#logo{
+				margin-bottom: 1.3em;
+			}
+		}
+		#main-nav{
+			top: 110px;
+			margin: 0;
+			width: 100%;
+			.venue a{
+				@include border-top-radius(0);
+			}
+		}
+		#intro, .slider, .photos{
+			clear: both;
+			display: block;
+		}
+		#intro{
+			font: normal 1.5em "Terminal Dosis", "Helvetica Nueue", "Helvetica";
+		}
+		.slider{
+			background-color: #ccc;
+			margin: -120px 0 20px;
+			min-height: 200px;
+			width: 100%;
+		}
+		#quick-details{
+			.col1, .col2, .col3 {
+				@include columns(4);
+			}
+			.col3{
+				@include omega(4);
+			}
+		}
+	}
+	
+}

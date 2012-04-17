@@ -1,0 +1,18 @@
+/* ----------------------------------------------------
+=root
+---------------------------------------------------- */
+html {
+    background: #cac8b3 url('/assets/06/images/bg-content.png') top left;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: transparent;
+    color: rgb(40,40,40);
+    font: 100%/1.4 "Open Sans", Arial, Sans;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    width: 100%;
+}

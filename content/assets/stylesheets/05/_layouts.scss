@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+LAYOUT
+------------------------------------------------------------------*/
+.two-columns {
+  clear: both;
+  margin-bottom: 30px;
+  .column-one,.column-two {
+    float: left;
+    width: 460px;
+  }
+  .column-one {
+    margin-right: 20px;
+  }
+}
+.xi{
+  .column-one{
+    float:left;
+    width:70%;
+  }
+  .column-two{
+    float:right;
+    width:28%;
+  }
+}
+.three-columns {
+  clear: both;
+  margin-bottom: 30px;
+  .column-one,.column-two,.column-three {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+  }
+  .column-three {
+    margin-right: 0;
+  }
+}
+.four-columns {
+  clear: both;
+  margin-bottom: 30px;
+  .column-one,.column-two,.column-three,.column-four, li {
+    float: left;
+    margin-right: 20px;
+    width: 220px;
+  }
+  .column-four, li:last-child {
+    margin-right: 0;
+  }
+}

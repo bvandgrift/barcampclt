@@ -1,0 +1,26 @@
+%nav.clearfix
+  %ul
+    %li.home{ :class => ("active" if @item.path == '/v/') }
+      %a{:href => "/v/"}
+        %span 
+        Home
+    %li.venue{ :class => ("active" if @item.path == '/v/venue/') }
+      %a{:href => "/v/venue/"}
+        %span 
+        Venue
+    %li.schedule{ :class => ("active" if @item.path == '/v/schedule/') }
+      %a{:href => "/v/schedule/"}
+        %span 
+        Schedule
+    %li.sponsor{ :class => ("active" if @item.path == '/v/sponsor/') }
+      %a{:href => "/v/sponsor/"}
+        %span 
+        Sponsor
+    %li.volunteer{ :class => ("active" if @item.path == '/v/volunteer/') }
+      %a{:href => "/v/volunteer/"}
+        %span 
+        Volunteer
+    -# %li.register
+    -#   %a{:href => "http://anyvite.com/3yhrt4ykj4"}
+    -#     %span
+    -#     Register

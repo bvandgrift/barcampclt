@@ -5,8 +5,11 @@
     %body{:id => "#{@item[:bodyID]}", :class => "#{@item[:bodyClasses]}"}
         = render "partials/_header"
         
-        %article{:role => "main"}
-            = yield
-        
+        #container
+            .inner
+                %article{:role => "main"}
+                    = yield
+                = render "partials/_nav"
+            
         = render "partials/_footer"
         = render "partials/_bottom"

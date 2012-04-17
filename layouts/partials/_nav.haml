@@ -1,0 +1,14 @@
+%nav#main-nav{:role => "navigation"}
+    %ul
+        %li.home{ :class => ("active" if @item.path == '/') }
+            %a{:href => "/"} Home
+        %li.venue{ :class => ("active" if @item.path == '/venue/') }
+            %a{:href => "/venue/"} Venue
+        %li.schedule{ :class => ("active" if @item.path == '/schedule/') }
+            %a{:href => "/schedule/"} Schedule
+        %li.sponsor{ :class => ("active" if @item.path == '/sponsor/') }
+            %a{:href => "/sponsor/"} Sponsor
+        %li.volunteer{ :class => ("active" if @item.path == '/volunteer/') }
+            %a{:href => "/volunteer/"} Volunteer
+        %li.register
+            %a{:href => "http://barcampcharlotte7.eventbrite.com/"} Register

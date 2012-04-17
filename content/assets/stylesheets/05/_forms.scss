@@ -1,0 +1,47 @@
+/* form elements */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom; *vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+label, input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
+button {
+  width: auto;
+  overflow: visible;
+}
+
+button, .button {
+  background-image: url('/assets/05/images/default-ribbon-button.png');
+  color: #632922;
+  display: inline-block;
+  font: 130% Chunk, Georgia;
+  height: 48px;
+  left: -10px;
+  line-height: 49px;
+  padding-right: 20px;
+  position: relative;
+  text-indent: 40px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #c87a6f;
+}
+button .corner, .button .corner {
+  background: url('/assets/05/images/default-ribbon-button.png') top right no-repeat;
+  height: 48px;
+  right: -30px;
+  position: absolute;
+  top: 0px;
+  width: 30px;
+}
+button:hover, .button:hover {
+  color: #632922;
+}
+button .text, .button .text {@include opacity(0.8);@include transition(opacity 0.2s ease-in);
+}
+button:hover .text, .button:hover .text {@include opacity(1);@include transition(opacity 0.2s ease-in);
+}
