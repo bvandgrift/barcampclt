@@ -4,12 +4,12 @@
         = render "partials/_head"
     %body{:id => "#{@item[:bodyID]}", :class => "#{@item[:bodyClasses]}"}
         = render "partials/_header"
-        
-        #container
+
+        #container.clearfix
             .inner
                 %article{:role => "main"}
                     = yield
                 = render "partials/_nav"
-            
+
         = render "partials/_footer"
         = render "partials/_bottom"

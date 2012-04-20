@@ -1,5 +1,5 @@
 // required to load the various Compass mixins
-@import "compass"; 
+@import "compass";
 
 // fixed or fluid grid system
 // if by chance you get the error "File to import not found or unreadable: susy"
@@ -8,14 +8,14 @@
 @import "susy";
 
 // a setup file to hold setup variables & custom mixins
-@import "setup";   
+@import "setup";
 
 /* ----------------------------------------------------
 HTML5/320 Boilerplate hybrid in Haml/Sass/Compass
 A combination of the HTML5 boilerplate by Paul Irish
 and the 320 and up boilerplate by Andy Clarke.
 
-http://html5boilerplate.com/ 
+http://html5boilerplate.com/
 URL: http://stuffandnonsense.co.uk/projects/320andup/
 ---------------------------------------------------- */
 @import "reset";
@@ -45,7 +45,7 @@ header{
 		img{
 			display: block;
 			margin: 0 auto;
-			width: 260px;	
+			width: 260px;
 		}
 	}
 }
@@ -105,7 +105,7 @@ a.button, button{
 		@include background(linear-gradient(lighten($color-accent, 5%), darken($color-accent, 10%)));
 	}
 	&:active {
-		@include background(linear-gradient(darken($color-accent, 10%), lighten($color-accent, 5%)));	
+		@include background(linear-gradient(darken($color-accent, 10%), lighten($color-accent, 5%)));
 	}
 }
 .herobanner{
@@ -114,14 +114,14 @@ a.button, button{
 		min-height: 200px;
 	}
 	.banner{
-		background-color: #ccc;
 		margin-top: -120px;
-		min-height: 200px;
 		width: 100%;
 		img{
+			display: block;
+			margin-bottom: 40px;
 			width: 100%;
 		}
-	}	
+	}
 }
 
 footer{
@@ -129,7 +129,7 @@ footer{
 	clear: both;
 	color: $color-text-alt;
 	margin-top: 40px;
-	padding: 10px 5% 20px;
+	padding: 60px 5% 60px;
 	small{
 		clear: both;
 		display: block;
@@ -150,6 +150,8 @@ footer{
 		}
 	}
 	.xxxx{
+		clear: both;
+		margin-bottom: 60px;
 		a{
 			background-color: #fff;
 			margin-bottom: 1.695%;
@@ -159,7 +161,7 @@ footer{
 			}
 		}
 		img{
-			width: 100%;	
+			width: 100%;
 		}
 	}
 }
@@ -314,6 +316,14 @@ footer{
 	}
 }
 
+.location{
+	.org,.street-address {
+		display: block;
+	}
+	.locality:after {
+		content: ", ";
+	}
+}
 /* ----------------------------------------------------
 =media queries
 print, 480px, 768px, 992px, 1392px, 2x-retina
